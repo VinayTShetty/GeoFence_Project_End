@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_dialog_layout_design_user_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/heat_alert_dialog_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_3sdp"
+        android:text=""
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+        android:id="@+id/heat_alert_seek_bar_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:bar_color="@color/colorInActiveMenu"
+        app:bar_highlight_color="@color/dive_one"
+        app:corner_radius="2"
+        app:data_type="_integer"
+        app:left_thumb_color="@color/colorAppTheme"
+        app:left_thumb_color_pressed="@color/colorAppTheme"
+        app:max_value="85"
+        app:min_value="-40"
+        app:position="left"
+        app:right_thumb_color="@color/colorAppTheme"
+        app:right_thumb_color_pressed="@color/colorAppTheme"
+        app:steps="1">
+
+    </com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/heat_alert_dialog_tv_min_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="@dimen/_3sdp"
+            android:text=""
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/heat_alert_dialog_tv_max_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/_3sdp"
+            android:text=""
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

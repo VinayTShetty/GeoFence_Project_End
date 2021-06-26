@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_home_bg">
+
+    <TextView
+        android:id="@+id/frg_surface_setup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="left"
+        android:padding="@dimen/_8sdp"
+        android:text="Device settings options"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14sdp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/frg_message_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_surface_setup_title"
+        android:layout_margin="@dimen/_8sdp"
+        android:elevation="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/colorTransparent"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="GSM Interval(0-65535)"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/frg_device_setting_edittext_gsm_interval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorGrayText"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="GPS Interval(0-65535)"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/frg_device_setting_edittext_gps_interval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorGrayText"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Iridium Interval(0-65535)"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/frg_device_setting_edittext_iridium_interval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorGrayText"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="GSM Timeout(0-65535)"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/frg_device_setting_edittext_gsm_timeout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorGrayText"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="GPS Timeout(0-65535)"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/frg_device_setting_edittext_gps_timeout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorGrayText"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:hint="Iridium Timeout(0-65535)"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/frg_device_setting_edittext_iridium_timeout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorGrayText"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/frg_device_setting_btn_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/textview_rounded_boarder"
+                    android:text="Send"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

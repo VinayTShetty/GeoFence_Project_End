@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/frg_device_list_tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorSemiTransparent"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="Depth N Temp Devices's settings"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14sdp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/frg_device_setting_rl_export_excel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorSemiTransparent"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+                &lt;!&ndash; Current Duration Label &ndash;&gt;
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:layout_toLeftOf="@+id/frg_device_setting_ll_export_excel"
+                    android:gravity="left"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Export Missions to Excel"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:id="@+id/frg_device_setting_ll_export_excel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/frg_device_setting_iv_export_excel"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/icon_excel"
+                        android:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Export"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_device_setting_rl_erase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorSemiTransparent"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+                &lt;!&ndash; Current Duration Label &ndash;&gt;
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:layout_toLeftOf="@+id/frg_device_setting_ll_erase"
+                    android:gravity="left"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Erase Missions"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:id="@+id/frg_device_setting_ll_erase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/frg_device_setting_iv_erase"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/erase_nvm"
+                        android:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Erase"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_device_setting_rl_battery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorSemiTransparent"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+                &lt;!&ndash; Current Duration Label &ndash;&gt;
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:layout_toLeftOf="@+id/frg_device_setting_ll_battery"
+                    android:gravity="left"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Report Battery %"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:id="@+id/frg_device_setting_ll_battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/frg_device_setting_iv_battery"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/battery_half" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="55%"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_device_setting_rl_set_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorSemiTransparent"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+                &lt;!&ndash; Current Duration Label &ndash;&gt;
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:layout_toLeftOf="@+id/frg_device_setting_ll_set_time"
+                    android:gravity="left"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Set UTC Time"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:id="@+id/frg_device_setting_ll_set_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/frg_device_setting_iv_set_time"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/time_sync_icon"
+                        android:tint="@color/colorWhite" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/frg_device_setting_ll_data_export_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorSemiTransparent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Data Export Model"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:checkedButton="@+id/radioBtnApp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <RadioButton
+                        android:id="@+id/frg_device_setting_rb_sc2_only"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorWhite"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="SC2 Only "
+                        android:textColor="@color/colorWhite" />
+
+                    <RadioButton
+                        android:id="@+id/frg_device_setting_rb_app_only"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorWhite"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="App Only "
+                        android:textColor="@color/colorWhite" />
+
+                    <RadioButton
+                        android:id="@+id/frg_device_setting_rb_both"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorWhite"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="SC2 and App "
+                        android:textColor="@color/colorWhite" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frg_device_setting_ll_stationary_interval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/colorSemiTransparent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Stationary Meas Interval"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/frg_device_setting_tv_stationary_interval_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:text="0 Hours"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/frg_device_setting_sb_stationary_interval_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    app:isb_indicator_color="@color/colorWhite"
+                    app:isb_indicator_stay="false"
+                    app:isb_indicator_text_color="@color/colorWhite"
+                    app:isb_indicator_type="circular_bubble"
+                    app:isb_max="60"
+                    app:isb_min="0"
+                    app:isb_progress="0"
+                    app:isb_progress_value_float="false"
+                    app:isb_show_indicator="false"
+                    app:isb_thumb_color="@color/colorWhite"
+                    app:isb_thumb_progress_stay="false"
+                    app:isb_tick_color="@color/colorWhite"
+                    app:isb_track_background_bar_color="@color/colorWhiteLight"
+                    app:isb_track_progress_bar_color="@color/colorWhite"
+                    app:isb_track_progress_bar_size="@dimen/_4sdp"
+                    app:isb_track_rounded_corners="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/frg_device_setting_tv_stationary_interval_minute"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:text="0 Minutes"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <com.warkiz.widget.IndicatorSeekBar
+                            android:id="@+id/frg_device_setting_sb_stationary_interval_minute"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            app:isb_indicator_color="@color/colorWhite"
+                            app:isb_indicator_stay="false"
+                            app:isb_indicator_text_color="@color/colorWhite"
+                            app:isb_indicator_type="circular_bubble"
+                            app:isb_max="60"
+                            app:isb_min="0"
+                            app:isb_progress="0"
+                            app:isb_progress_value_float="false"
+                            app:isb_show_indicator="false"
+                            app:isb_thumb_color="@color/colorWhite"
+                            app:isb_thumb_progress_stay="false"
+                            app:isb_tick_color="@color/colorWhite"
+                            app:isb_track_background_bar_color="@color/colorWhiteLight"
+                            app:isb_track_progress_bar_color="@color/colorWhite"
+                            app:isb_track_progress_bar_size="@dimen/_4sdp"
+                            app:isb_track_rounded_corners="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/frg_device_setting_tv_stationary_interval_seconds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:text="0 Seconds"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <com.warkiz.widget.IndicatorSeekBar
+                            android:id="@+id/frg_device_setting_sb_stationary_interval_seconds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            app:isb_indicator_color="@color/colorWhite"
+                            app:isb_indicator_stay="false"
+                            app:isb_indicator_text_color="@color/colorWhite"
+                            app:isb_indicator_type="circular_bubble"
+                            app:isb_max="60"
+                            app:isb_min="0"
+                            app:isb_progress="0"
+                            app:isb_progress_value_float="false"
+                            app:isb_show_indicator="false"
+                            app:isb_thumb_color="@color/colorWhite"
+                            app:isb_thumb_progress_stay="false"
+                            app:isb_tick_color="@color/colorWhite"
+                            app:isb_track_background_bar_color="@color/colorWhiteLight"
+                            app:isb_track_progress_bar_color="@color/colorWhite"
+                            app:isb_track_progress_bar_size="@dimen/_4sdp"
+                            app:isb_track_rounded_corners="true" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frg_device_setting_ll_gps_interval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:background="@color/colorSemiTransparent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/_5sdp"
+                    android:text="GPS Meas Interval"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/frg_device_setting_tv_gps_interval_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:text="0 Hours"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/frg_device_setting_sb_gps_interval_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    app:isb_indicator_color="@color/colorWhite"
+                    app:isb_indicator_stay="false"
+                    app:isb_indicator_text_color="@color/colorWhite"
+                    app:isb_indicator_type="circular_bubble"
+                    app:isb_max="60"
+                    app:isb_min="0"
+                    app:isb_progress="0"
+                    app:isb_progress_value_float="false"
+                    app:isb_show_indicator="false"
+                    app:isb_thumb_color="@color/colorWhite"
+                    app:isb_thumb_progress_stay="false"
+                    app:isb_tick_color="@color/colorWhite"
+                    app:isb_track_background_bar_color="@color/colorWhiteLight"
+                    app:isb_track_progress_bar_color="@color/colorWhite"
+                    app:isb_track_progress_bar_size="@dimen/_4sdp"
+                    app:isb_track_rounded_corners="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/frg_device_setting_tv_gps_interval_minute"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:text="0 Minutes"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <com.warkiz.widget.IndicatorSeekBar
+                            android:id="@+id/frg_device_setting_sb_gps_interval_minute"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            app:isb_indicator_color="@color/colorWhite"
+                            app:isb_indicator_stay="false"
+                            app:isb_indicator_text_color="@color/colorWhite"
+                            app:isb_indicator_type="circular_bubble"
+                            app:isb_max="60"
+                            app:isb_min="0"
+                            app:isb_progress="0"
+                            app:isb_progress_value_float="false"
+                            app:isb_show_indicator="false"
+                            app:isb_thumb_color="@color/colorWhite"
+                            app:isb_thumb_progress_stay="false"
+                            app:isb_tick_color="@color/colorWhite"
+                            app:isb_track_background_bar_color="@color/colorWhiteLight"
+                            app:isb_track_progress_bar_color="@color/colorWhite"
+                            app:isb_track_progress_bar_size="@dimen/_4sdp"
+                            app:isb_track_rounded_corners="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/frg_device_setting_tv_gps_interval_seconds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:text="0 Seconds"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <com.warkiz.widget.IndicatorSeekBar
+                            android:id="@+id/frg_device_setting_sb_gps_interval_seconds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            app:isb_indicator_color="@color/colorWhite"
+                            app:isb_indicator_stay="false"
+                            app:isb_indicator_text_color="@color/colorWhite"
+                            app:isb_indicator_type="circular_bubble"
+                            app:isb_max="60"
+                            app:isb_min="0"
+                            app:isb_progress="0"
+                            app:isb_progress_value_float="false"
+                            app:isb_show_indicator="false"
+                            app:isb_thumb_color="@color/colorWhite"
+                            app:isb_thumb_progress_stay="false"
+                            app:isb_tick_color="@color/colorWhite"
+                            app:isb_track_background_bar_color="@color/colorWhiteLight"
+                            app:isb_track_progress_bar_color="@color/colorWhite"
+                            app:isb_track_progress_bar_size="@dimen/_4sdp"
+                            app:isb_track_rounded_corners="true" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frg_device_setting_ll_gps_ble_cutoff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:background="@color/colorSemiTransparent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="@dimen/_5sdp"
+                    android:text="GPS BLE Cutoff"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/frg_device_setting_tv_gps_ble_milli_bars"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:text="0 Milli Bars"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.warkiz.widget.IndicatorSeekBar
+                    android:id="@+id/frg_device_setting_sb_gps_ble_cut_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    app:isb_indicator_color="@color/colorWhite"
+                    app:isb_indicator_stay="false"
+                    app:isb_indicator_text_color="@color/colorWhite"
+                    app:isb_indicator_type="circular_bubble"
+                    app:isb_max="60"
+                    app:isb_min="0"
+                    app:isb_progress="0"
+                    app:isb_progress_value_float="false"
+                    app:isb_show_indicator="false"
+                    app:isb_thumb_color="@color/colorWhite"
+                    app:isb_thumb_progress_stay="false"
+                    app:isb_tick_color="@color/colorWhite"
+                    app:isb_track_background_bar_color="@color/colorWhiteLight"
+                    app:isb_track_progress_bar_color="@color/colorWhite"
+                    app:isb_track_progress_bar_size="@dimen/_4sdp"
+                    app:isb_track_rounded_corners="true" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>-->

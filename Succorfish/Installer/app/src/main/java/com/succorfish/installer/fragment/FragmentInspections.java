@@ -1,0 +1,215 @@
+package com.succorfish.installer.fragment;
+
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.succorfish.installer.MainActivity;
+import com.succorfish.installer.R;
+import com.succorfish.installer.interfaces.onFragmentBackPress;
+import com.succorfish.installer.views.StepperIndicator;
+
+/**
+ * Created by Jaydeep on 27-02-2018.
+ */
+
+public class FragmentInspections extends Fragment {
+    View mViewRoot;
+    MainActivity mActivity;
+    private SectionsPagerAdapter mSectionsPagerAdapter;
+
+    private StepperIndicator stepperIndicator;
+
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mActivity = (MainActivity) getActivity();
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        mViewRoot = inflater.inflate(R.layout.fragment_inspection, container, false);
+        mActivity.mTextViewTitle.setText(getResources().getString(R.string.str_dashboard_menu_inspection));
+        mActivity.mImageViewBack.setVisibility(View.VISIBLE);
+        mActivity.mImageViewAdd.setVisibility(View.GONE);
+        mActivity.mRelativeLayoutBottomMenu.setVisibility(View.GONE);
+        mActivity.mViewPagerInspection = mViewRoot.findViewById(R.id.fragment_instpection_container);
+        stepperIndicator = mViewRoot.findViewById(R.id.fragment_instpection_stepperIndicator);
+        mActivity.mTestDeviceStatus = 0;
+        mActivity.mStringTestDeviceReportedDate = "";
+        mActivity.mIsTestDeviceCheck = false;
+        mSectionsPagerAdapter = new SectionsPagerAdapter(getChildFragmentManager());
+        mActivity.mViewPagerInspection.setAdapter(mSectionsPagerAdapter);
+
+        stepperIndicator.showLabels(false);
+        stepperIndicator.setViewPager(mActivity.mViewPagerInspection);
+        // or keep last page as "end page"
+        stepperIndicator.setViewPager(mActivity.mViewPagerInspection, mActivity.mViewPagerInspection.getAdapter().getCount() - 1); //
+
+        /*// or manual change
+        indicator.setStepCount(3);
+        indicator.setCurrentStep(2);
+*/
+        mActivity.setOnBackFrgPress(new onFragmentBackPress() {
+            @Override
+            public void onFragmentBackPress(Fragment mFragment) {
+                if (mFragment instanceof FragmentInspections) {
+                    System.out.println("BackKK");
+                    int currentPage = mActivity.mViewPagerInspection.getCurrentItem();
+                    Fragment page = getChildFragmentManager().findFragmentByTag("android:switcher:" + R.id.fragment_instpection_container + ":" + mActivity.mViewPagerInspection.getCurrentItem());
+                    if (page instanceof FragmentInspectionOne) {
+                        mActivity.onBackPressedDirect();
+//                        if (mActivity.mIntInspectionId != 0) {
+//                            AlertDialog.Builder builder = new AlertDialog.Builder(mActivity, R.style.AppCompatAlertDialogStyle);
+//                            builder.setCancelable(false);
+//                            builder.setMessage(getResources().getString(R.string.str_back_confirmation));
+//                            builder.setPositiveButton(getResources().getString(R.string.str_yes), new DialogInterface.OnClickListener() {
+//                                @Override
+//                                public void onClick(DialogInterface dialog, int which) {
+//                                    dialog.dismiss();
+//                                    mActivity.onBackPressedDirect();
+//                                }
+//                            });
+//                            builder.setNegativeButton(getResources().getString(R.string.str_no), new DialogInterface.OnClickListener() {
+//                                @Override
+//                                public void onClick(DialogInterface dialog, int which) {
+//                                    dialog.dismiss();
+//                                }
+//                            });
+//                            builder.show();
+//                        } else {
+//                            mActivity.onBackPressedDirect();
+//                        }
+                    } else if (page instanceof FragmentInspectionTwo) {
+                        FragmentInspectionTwo mFragmentInspectionTwo = (FragmentInspectionTwo) page;
+                        mFragmentInspectionTwo.onBackPressCall(mActivity);
+                        mActivity.mViewPagerInspection.setCurrentItem(0, true);
+                    } else if (page instanceof FragmentInspectionThree) {
+                        FragmentInspectionThree mFragmentInspectionThree = (FragmentInspectionThree) page;
+                        mFragmentInspectionThree.onBackPressCall(mActivity);
+                        mActivity.mViewPagerInspection.setCurrentItem(1, true);
+                    } else {
+                        mActivity.onBackPressedDirect();
+//                        if (mActivity.mIntInspectionId != 0) {
+//                            AlertDialog.Builder builder = new AlertDialog.Builder(mActivity, R.style.AppCompatAlertDialogStyle);
+//                            builder.setCancelable(false);
+//                            builder.setMessage(getResources().getString(R.string.str_back_confirmation));
+//                            builder.setPositiveButton(getResources().getString(R.string.str_yes), new DialogInterface.OnClickListener() {
+//                                @Override
+//                                public void onClick(DialogInterface dialog, int which) {
+//                                    dialog.dismiss();
+//                                    mActivity.onBackPressedDirect();
+//                                }
+//                            });
+//                            builder.setNegativeButton(getResources().getString(R.string.str_no), new DialogInterface.OnClickListener() {
+//                                @Override
+//                                public void onClick(DialogInterface dialog, int which) {
+//                                    dialog.dismiss();
+//                                }
+//                            });
+//                            builder.show();
+//                        } else {
+//                            mActivity.onBackPressedDirect();
+//                        }
+                    }
+//                    if (currentPage == 0) {
+//
+//                    } else if (currentPage == 1) {
+//
+//                    } else if (currentPage == 2) {
+//
+//                    } else {
+//                        if (mActivity.mIntInspectionId != 0) {
+//                            AlertDialog.Builder builder = new AlertDialog.Builder(mActivity, R.style.AppCompatAlertDialogStyle);
+//                            builder.setCancelable(false);
+//                            builder.setMessage(getResources().getString(R.string.str_back_confirmation));
+//                            builder.setPositiveButton(getResources().getString(R.string.str_yes), new DialogInterface.OnClickListener() {
+//                                @Override
+//                                public void onClick(DialogInterface dialog, int which) {
+//                                    dialog.dismiss();
+//                                    mActivity.onBackPressedDirect();
+//                                }
+//                            });
+//                            builder.setNegativeButton(getResources().getString(R.string.str_no), new DialogInterface.OnClickListener() {
+//                                @Override
+//                                public void onClick(DialogInterface dialog, int which) {
+//                                    dialog.dismiss();
+//                                }
+//                            });
+//                            builder.show();
+//                        } else {
+//                            mActivity.onBackPressedDirect();
+//                        }
+//                    }
+                }
+            }
+        });
+
+        return mViewRoot;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        mActivity.mImageViewBack.setVisibility(View.GONE);
+    }
+
+    /**
+     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
+     * one of the sections/tabs/pages.
+     */
+    public class SectionsPagerAdapter extends FragmentPagerAdapter {
+
+        public SectionsPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            // getItem is called to instantiate the fragment for the given page.
+            // Return a PlaceholderFragment (defined as a static inner class below).
+            switch (position) {
+                case 0:
+                    return FragmentInspectionOne.newInstance();
+                case 1:
+                    return FragmentInspectionTwo.newInstance();
+                case 2:
+                    return FragmentInspectionThree.newInstance();
+            }
+
+            return null;
+        }
+
+        @Override
+        public int getCount() {
+            // Show 2 total pages.
+            return 3;
+        }
+
+        @Override
+        public int getItemPosition(@NonNull Object object) {
+            return super.getItemPosition(object);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position) {
+                case 0:
+                    return "First Level";
+                case 1:
+                    return "Second Level";
+                case 2:
+                    return "Finish";
+            }
+            return null;
+        }
+    }
+}

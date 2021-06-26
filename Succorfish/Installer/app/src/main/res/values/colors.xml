@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#050505</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="colorAppTheme">#050505</color>
+    <color name="colorBlueTheme">#050505</color>
+    <color name="colorBackground">#f2f2f2</color>
+    <color name="colorToolbarBg">#050505</color>
+
+    <color name="colorMenuBg">#FFFFFF</color>
+    <color name="colorActiveMenu">#FFFFFF</color>
+    <color name="colorInActiveMenu">#737373</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorSemiTransparent">#44000000</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorGreen">#00FF00</color>
+    <color name="colorBlue">#0000FF</color>
+
+    <color name="colorWhiteLight">#90FFFFFF</color>
+    <color name="colorEmptyList">#3D3D3D</color>
+    <color name="colorBlueText">#2196F3</color>
+
+    <color name="colorDivider">#6D6D6D</color>
+
+    <color name="colorTitle">#FFFFFF</color>
+    <color name="colorSubTitle">#7700AEEF</color>
+    <color name="colorDescription">#7700AEEF</color>
+
+    <color name="colorGrayText">#737373</color>
+
+    <color name="colorButtonBg">#d5d5d5</color>
+    <color name="radio_button_selected_color">#FFFFFF</color>
+    <color name="radio_button_deselected_color">#8E8E8E</color>
+    <color name="pin_normal">#6B767E</color>
+    <color name="colorSpinnerBackground">#d5d5d5</color>
+    <color name="stpi_default_circle_color">#b3bdc2</color>
+    <color name="stpi_default_primary_color">#00b47c</color>
+    <color name="stpi_default_line_color">#b3bdc2</color>
+    <color name="stpi_default_text_color">#0f0</color>
+
+    <color name="bottom_lib_transport">#00000000</color>
+    <color name="bottom_lib_dialog_item_text_color">#333333</color>
+    <color name="bottom_lib_dialog_title_text_color">#666666</color>
+    <color name="bottom_lib_dialog_cancel_text_color">#666666</color>
+</resources>

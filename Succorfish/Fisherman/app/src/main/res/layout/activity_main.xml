@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_relativelayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_dashboard_bg" />
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/activity_main_appbar_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/activity_main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="@dimen/_3sdp"
+                app:contentInsetStart="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_main_rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/activity_main_appbar_header"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:id="@+id/activity_main_relativelayout_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></RelativeLayout>
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/activity_main_rl_viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/activity_main_appbar_header"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/activity_main_tv_index"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginRight="@dimen/_20sdp"-->
+        <!--android:layout_marginTop="@dimen/_5sdp"-->
+        <!--android:padding="@dimen/_5sdp"-->
+        <!--android:text="( 1 / 1 )"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="@dimen/_12sdp"-->
+        <!--android:visibility="gone" />-->
+
+        <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/activity_main_vpPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/activity_main_rl_bottomLayout"-->
+        <!--android:layout_below="@+id/activity_main_tv_index"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:padding="@dimen/_20sdp">-->
+
+        <!--</android.support.v4.view.ViewPager>-->
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/activity_main_rl_bottomLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/colorAppTheme"-->
+        <!--android:visibility="gone">-->
+
+        <!--<Button-->
+        <!--android:id="@+id/activity_main_btn_back"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:background="@null"-->
+        <!--android:text="@string/str_back"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:visibility="gone" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/activity_main_btn_next"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@null"-->
+        <!--android:padding="@dimen/_5sdp"-->
+        <!--android:text="@string/str_next"-->
+        <!--android:textColor="@color/colorWhite" />-->
+        <!--</RelativeLayout>-->
+        <!--</RelativeLayout>-->
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

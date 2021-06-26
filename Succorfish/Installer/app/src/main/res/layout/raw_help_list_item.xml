@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/raw_help_textview_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="left"
+        android:text="Lorem Ipsum:"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/raw_help_textview_answers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/raw_help_textview_question"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="left"
+        android:text="It is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        android:textColor="@color/colorWhiteLight"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="visible" />
+</RelativeLayout>

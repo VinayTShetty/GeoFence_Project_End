@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fragment_device_set_color_rl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingTop="@dimen/_3sdp">
+
+            <co.ceryle.radiorealbutton.RadioRealButtonGroup
+                android:id="@+id/fragment_device_set_color_segmentedgroup_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:rrbg_backgroundColor="@color/colorWhite"
+                app:rrbg_borderColor="@color/colorWhite"
+                app:rrbg_borderSize="@dimen/_3sdp"
+                app:rrbg_checkedPosition="0"
+                app:rrbg_dividerColor="@android:color/transparent"
+                app:rrbg_dividerSize="0dp"
+                app:rrbg_radius="@dimen/_6sdp"
+                app:rrbg_selectorColor="@color/radio_button_selected_color"
+                app:rrbg_selectorRadius="@dimen/_8sdp">
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:id="@+id/fragment_device_set_color_segmented_btn_color"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    app:rrb_checked="true"
+                    app:rrb_ripple="true"
+                    app:rrb_rippleColor="@color/colorWhite"
+                    app:rrb_text="@string/frg_device_set_color_tab_wheel"
+                    app:rrb_textColor="@color/radio_button_selected_color"
+                    app:rrb_textSize="@dimen/_12sdp" />
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:id="@+id/fragment_device_set_color_segmented_btn_patterns"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    app:rrb_checked="true"
+                    app:rrb_ripple="true"
+                    app:rrb_rippleColor="@color/colorWhite"
+                    app:rrb_text="@string/frg_device_set_color_tab_patterns"
+                    app:rrb_textColor="@color/radio_button_selected_color"
+                    app:rrb_textSize="@dimen/_12sdp" />
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:id="@+id/fragment_device_set_color_segmented_btn_music"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    app:rrb_checked="true"
+                    app:rrb_ripple="true"
+                    app:rrb_rippleColor="@color/colorWhite"
+                    app:rrb_text="@string/frg_device_set_color_tab_music"
+                    app:rrb_textColor="@color/radio_button_selected_color"
+                    app:rrb_textSize="@dimen/_12sdp" />
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:id="@+id/fragment_device_set_color_segmented_btn_smartlight_settings"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    app:rrb_checked="true"
+                    app:rrb_ripple="true"
+                    app:rrb_rippleColor="@color/colorWhite"
+                    app:rrb_text="@string/frg_device_set_color_tab_settings"
+                    app:rrb_textColor="@color/radio_button_selected_color"
+                    app:rrb_textSize="@dimen/_12sdp" />
+
+            </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_device_set_color_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

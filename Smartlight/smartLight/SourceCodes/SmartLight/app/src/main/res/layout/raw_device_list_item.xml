@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:id="@+id/raw_device_list_item_relativelayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/raw_device_list_item_imageview_device"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_default_pic"
+                    android:tint="@color/colorWhite" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/raw_device_list_item_switch_device"
+                    android:layout_toRightOf="@+id/raw_device_list_item_imageview_device"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/raw_device_list_item_textview_device_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/raw_device_list_item_textview_device_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text=""
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/raw_device_list_item_switch_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/raw_device_list_item_imageview_more"
+                    android:checked="false"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:thumb="@drawable/switch_thumb"
+                    app:trackTint="@color/colorWhite" />
+
+                <ImageView
+                    android:id="@+id/raw_device_list_item_imageview_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_more_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutBrightnessControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/raw_device_list_item_iv_low_brightness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_brightness_low" />
+
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/raw_device_list_item_seek_bar_brightness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/raw_device_list_item_iv_full_brightness"
+                    android:layout_toRightOf="@+id/raw_device_list_item_iv_low_brightness"
+                    android:max="100"
+                    android:min="0"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:paddingRight="@dimen/_12sdp"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/custom_thumb"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/raw_device_list_item_iv_full_brightness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_brightness_full" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/raw_device_list_item_linearlayout_expanded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorWhite" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_3sdp"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/raw_device_list_item_imageview_favourite"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.99"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_unfavorite"
+                        android:tint="@color/colorWhite" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="0.01"
+                        android:background="@color/colorWhite" />
+
+                    <ImageView
+                        android:id="@+id/raw_device_list_item_imageview_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.99"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/edit_icon"
+                        android:tint="@color/colorWhite" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="0.01"
+                        android:background="@color/colorWhite" />
+
+                    <ImageView
+                        android:id="@+id/raw_device_list_item_imageview_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.99"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/delete_icon"
+                        android:tint="@color/colorWhite" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="0.01"
+                        android:background="@color/colorWhite" />
+
+                    <ImageView
+                        android:id="@+id/raw_device_list_item_iv_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.99"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_menu_settings"
+                        android:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/raw_device_list_item_textview_last_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Remember Last state?"
+                        android:textColor="@color/colorWhiteLight"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/raw_device_list_item_relativelayout_main"
+        android:background="@color/colorWhite"
+        android:visibility="gone" />
+</RelativeLayout>

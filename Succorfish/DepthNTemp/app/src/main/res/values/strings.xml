@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">DepthNTemp</string>
+    <string name="action_settings">Settings</string>
+
+    <!--GLOBAL-->
+    <string name="str_server_error_try_again">Server connection error. Please try again.</string>
+    <string name="str_server_error_something_wrong">Something went wrong. Please try again.</string>
+    <string name="str_no_more_data_found">No more data found.</string>
+    <string name="str_no_internet_connection">No internet connection.</string>
+    <string name="str_ok">OK</string>
+    <string name="str_yes">Yes</string>
+    <string name="str_no">No</string>
+    <string name="str_done">Done</string>
+    <string name="str_search">Search here by Vessel Name</string>
+    <string name="str_back">Back</string>
+    <string name="str_next">Next</string>
+    <string name="str_go_back">Go Back</string>
+    <string name="str_choose_option">Choose Option</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_view_photo">View Photo</string>
+    <string name="str_submit">Submit</string>
+    <string name="str_send">Send</string>
+    <string name="str_view">View</string>
+    <string name="str_share">Share</string>
+    <string name="str_save">Save</string>
+    <string name="str_start">Start</string>
+    <string name="str_stop">Stop</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_camera">Camera</string>
+    <string name="str_gallery">Gallery</string>
+    <string name="str_call">Call</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_remove">Remove</string>
+    <string name="str_press_back_again">Please press again to exit.</string>
+    <string name="str_exit_confirmation">Are you sure you want to exit?</string>
+    <string name="str_back_confirmation">Are you sure you want to exit without save?</string>
+    <string name="str_logout_confirmation">Are you sure you want to logout?</string>
+    <string name="str_logout_session_expired">Your session is expired. please login first.</string>
+
+
+    <!---->
+    <string name="str_mission">Missions</string>
+    <string name="str_settings">Setting</string>
+
+    <!--Dashboard-->
+    <string name="str_marine_app">Marine Sensing App</string>
+    <string name="str_menu_view_date">View Data</string>
+    <string name="str_menu_configure_sensor">Configure Sensor</string>
+    <string name="str_menu_app_setting">App Settings</string>
+    <string name="str_menu_about">About</string>
+
+    <string name="str_single_date_set">Single Data Set</string>
+    <string name="str_compare">Compare</string>
+    <string name="str_select_time_frame">Select Time Frame</string>
+    <string name="str_dive">Dive</string>
+    <string name="str_time">Time</string>
+    <string name="str_prompt_select_dive">Select Dive</string>
+    <string name="str_prompt_select_device">Select Device</string>
+    <string name="str_first_dive">Select First Dive</string>
+    <string name="str_second_dive">Select Second Dive</string>
+    <string name="str_first_device">Select First Device</string>
+    <string name="str_second_device">Select Second Device</string>
+    <string name="str_choose_date_time">Choose Date &amp; Time</string>
+    <string name="str_choose_start_date_time">Choose Start Date &amp; Time</string>
+    <string name="str_choose_finish_date_time">Choose Finish Date &amp; Time</string>
+    <string name="str_dive_location">Dive Location</string>
+    <!--Setting-->
+    <string name="str_time_utc">Time UTC</string>
+    <string name="str_time_utc_negative">-1 he</string>
+    <string name="str_time_utc_positive">+1 he</string>
+    <string name="str_time_utc_zero">0 he</string>
+    <string name="str_date_format">Date Format</string>
+    <string name="str_temperature_type">Temperature Type</string>
+    <string name="str_temperature_celsius">°C</string>
+    <string name="str_temperature_fahrenheit">°F</string>
+    <string name="str_auto_sync">Auto Sync</string>
+    <string name="str_export">Export Database</string>
+    <!--Configure Sensors-->
+    <string name="str_pair_device">Pair Device</string>
+    <string name="str_device_setting">Device Settings</string>
+    <string name="str_connect">Connect</string>
+    <string name="str_disconnect">Disconnect</string>
+    <string name="str_start_sync_msg">Are you sure you want to start syncing with device?</string>
+    <!--Device Setting-->
+    <string name="str_select_device">Select Device</string>
+    <string name="str_above_water">Above Water</string>
+    <string name="str_below_water">Below Water</string>
+    <string name="str_frq_position">Set Frequency of position</string>
+    <string name="str_ble_transmission">Bluetooth Transmission</string>
+    <string name="str_pressure">Reporting Frequency \nDepth</string>
+    <string name="str_report_every">Reading Depth</string>
+    <string name="str_frq_interval_time">Reporting Frequency Interval</string>
+    <string name="str_select_gps_interval">Select GPS Interval</string>
+    <string name="str_select_gps_timeout">Select GPS Timeout</string>
+    <string name="str_set_gps_interval">GPS Interval</string>
+    <string name="str_set_gps_timeout">GPS Timeout</string>
+    <!--View Data Setting-->
+    <string name="str_dive_one">Dive 1 : </string>
+    <string name="str_dive_two">Dive 2 : </string>
+    <string name="str_dives">Dive : </string>
+    <string name="str_device">Device : </string>
+    <string name="str_device_one">Device 1 : </string>
+    <string name="str_device_two">Device 2 : </string>
+    <string name="str_date">Date : </string>
+    <string name="str_date_one">Date 1 : </string>
+    <string name="str_date_two">Date 2 : </string>
+
+    <!--Compare Data-->
+    <string name="str_compare_data_title">Device Data</string>
+    <string name="str_raw_data">Raw Data</string>
+    <string name="str_line">Line Chart</string>
+    <string name="str_heat_map">Heat Map</string>
+
+    <!--Help-->
+    <string name="activity_main_menu_help">Help</string>
+
+    <!--Heat Map Setting-->
+    <string name="str_heat_map_setting">Heat Map Setting</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

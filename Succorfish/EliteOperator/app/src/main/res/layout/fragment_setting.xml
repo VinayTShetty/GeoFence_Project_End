@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_home_bg">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/frg_setting_recyclerview_menu"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="visible" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/frg_setting_relativelayout_setup_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorBgTransparent"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/raw_setup_surface_list_item_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:src="@drawable/ic_setup_device" />
+
+                <TextView
+                    android:id="@+id/raw_setup_surface_list_item_textview_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/frg_setting_imageView_pref_arrow"
+                    android:layout_toRightOf="@+id/raw_setup_surface_list_item_imageview"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="@string/frg_setting_txt_setup_device"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageView_pref_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_forward_arrow" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/frg_setting_relativelayout_device_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorBgTransparent"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/raw_device_setting_list_item_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:src="@drawable/ic_setup_device" />
+
+                <TextView
+                    android:id="@+id/raw_setup_surface_list_item_textview_device_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/frg_setting_imageView_device_setting_arrow"
+                    android:layout_toRightOf="@+id/raw_device_setting_list_item_imageview"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="@string/frg_setting_txt_device_setting"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageView_device_setting_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_forward_arrow" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/frg_setting_relativelayout_surface_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorBgTransparent"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/frg_setting_surface_list_item_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_2sdp"
+                    android:src="@drawable/ic_surface_icon" />
+
+                <TextView
+                    android:id="@+id/frg_setting_surface_list_item_textview_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/frg_setting_imageView_surface_msg_arrow"
+                    android:layout_toRightOf="@+id/frg_setting_surface_list_item_imageview"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="Surface Messages"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageView_surface_msg_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_forward_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_setting_relativelayout_diver_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorBgTransparent"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageview_driver_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:src="@drawable/ic_diver_default_small" />
+
+                <TextView
+                    android:id="@+id/frg_setting_textview_driver_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/frg_setting_imageView_diver_msg_arrow"
+                    android:layout_toRightOf="@+id/frg_setting_imageview_driver_msg"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="Diver Message"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageView_diver_msg_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_forward_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_setting_relativelayout_address_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorBgTransparent"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageview_address_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:src="@drawable/ic_addres_book" />
+
+                <TextView
+                    android:id="@+id/frg_setting_textview_address_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/frg_setting_imageView_add_book_msg_arrow"
+                    android:layout_toRightOf="@+id/frg_setting_imageview_address_book"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="Address Book"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageView_add_book_msg_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_forward_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_setting_relativelayout_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorBgTransparent"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageview_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:src="@drawable/ic_history" />
+
+                <TextView
+                    android:id="@+id/frg_setting_textview_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/frg_setting_imageView_history_msg_arrow"
+                    android:layout_toRightOf="@+id/frg_setting_imageview_history"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="History"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageView_history_msg_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_forward_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_setting_relativelayout_user_manual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorBgTransparent"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageview_user_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:src="@drawable/ic_usermanual" />
+
+                <TextView
+                    android:id="@+id/frg_setting_textview_user_manual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/frg_setting_imageView_user_manual_arrow"
+                    android:layout_toRightOf="@+id/frg_setting_imageview_user_manual"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="@string/frg_setting_txt_user_manual"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageView_user_manual_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_forward_arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_setting_relativelayout_heat_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/colorBgTransparent"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageview_heat_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:src="@drawable/ic_heat" />
+
+                <TextView
+                    android:id="@+id/frg_setting_textview_heat_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/frg_setting_imageView_heat_msg_arrow"
+                    android:layout_toRightOf="@+id/frg_setting_imageview_heat_msg"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="@string/frg_setting_txt_heat_message"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/frg_setting_imageView_heat_msg_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_forward_arrow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/frg_setting_relativelayout_battery_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@color/colorBgTransparent"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:id="@+id/frg_setting_relativelayout_battery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/frg_setting_imageview_battery_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:src="@drawable/ic_setting_battery_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/frg_setting_imageview_battery_icon"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="@string/frg_setting_txt_battery_level"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatSeekBar
+                        android:id="@+id/frg_setting_seekBrightness"
+                        style="@style/MySeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/frg_setting_circle_textview_battery_count"
+                        android:max="100"
+                        android:minHeight="@dimen/_15sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:progress="50"
+                        android:thumbOffset="@dimen/_5sdp"
+                        android:thumbTint="@color/colorWhite" />
+
+                    <com.libRG.CustomTextView
+                        android:id="@+id/frg_setting_circle_textview_battery_count"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="50"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp"
+                        app:lib_setRoundedBGColor="@color/colorAccent"
+                        app:lib_setRoundedView="true"
+                        app:lib_setShape="oval"
+                        app:lib_setStrokeWidth="1dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_update_profile_relativelayout_main"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/_20sdp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_login_bg_shadow"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="@string/str_sign_up_name"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/fragment_update_profile_edittext_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName|textCapSentences|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhiteLight"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:hint="@string/str_sign_up_business_name"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/fragment_update_profile_edittext_business_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhiteLight"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:hint="@string/str_sign_up_address"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/fragment_update_profile_edittext_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|left"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPostalAddress|textNoSuggestions"
+                        android:maxLines="3"
+                        android:minLines="3"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhiteLight"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:hint="@string/str_sign_up_mobile_no"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/fragment_update_profile_edittext_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhiteLight"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:hint="@string/str_sign_up_email_address"
+                    android:theme="@style/MyEditTextWhite">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/fragment_update_profile_edittext_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:imeOptions="actionDone"
+                        android:inputType="textEmailAddress|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhiteLight"
+                        android:textSize="@dimen/_14sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/fragment_update_profile_country_picker_countrycode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:ccpDialog_keyboardAutoPopup="false"
+                    app:ccp_arrowSize="@dimen/_20sdp"
+
+                    app:ccp_defaultLanguage="ENGLISH"
+                    app:ccp_flagBorderColor="@color/colorWhite"
+                    app:ccp_showFullName="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showPhoneCode="false"
+                    app:ccp_textColor="@color/colorWhite"
+                    app:ccp_textGravity="LEFT"
+                    app:ccp_textSize="@dimen/_12sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:background="@color/colorWhiteLight" />
+
+                <Button
+                    android:id="@+id/fragment_update_profile_button_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/ic_button_bg"
+                    android:text="@string/str_save"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

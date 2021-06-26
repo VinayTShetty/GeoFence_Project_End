@@ -1,0 +1,344 @@
+<resources>
+    <string name="app_name">Installer</string>
+    <string name="action_settings">Settings</string>
+
+    <!--GLOBAL-->
+    <string name="str_server_error_try_again">Server connection error. Please try again.</string>
+    <string name="str_server_error_someting_wrong">Something went wrong. Please try again.</string>
+    <string name="str_no_more_data_found">No more data found.</string>
+    <string name="str_no_internet_connection">No internet connection.</string>
+    <string name="str_ok">OK</string>
+    <string name="str_report">Report</string>
+    <string name="str_yes">Yes</string>
+    <string name="str_no">No</string>
+    <string name="str_done">Done</string>
+    <string name="str_search">Search here by Vessel Name</string>
+    <string name="str_back">Back</string>
+    <string name="str_next">Next</string>
+    <string name="str_go_back">Go Back</string>
+    <string name="str_choose_option">Choose Option</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_view_photo">View Photo</string>
+    <string name="str_submit">Submit</string>
+    <string name="str_send">Send</string>
+    <string name="str_view">View</string>
+    <string name="str_share">Share</string>
+    <string name="str_save">Save</string>
+    <string name="str_start">Start</string>
+    <string name="str_stop">Stop</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_camera">Camera</string>
+    <string name="str_gallery">Gallery</string>
+    <string name="str_call">Call</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_remove">Remove</string>
+    <string name="str_press_back_again">Please press again to exit.</string>
+    <string name="str_exit_confirmation">Are you sure want to exit?</string>
+    <string name="str_back_confirmation">Are you sure want to exit without save?</string>
+    <string name="str_logout_confirmation">Are you sure want to logout?</string>
+    <string name="str_logout_session_expired">Your session is expired. please login first.</string>
+    <string name="str_report_submitted">Report has been saved successfully but not submitted to server because of No internet connection. Please sync it later when internet available.</string>
+    <string name="error_occurred">An unexpected error occurred will solve all of your troubles.</string>
+    <string name="error_details">Error details:</string>
+    <string name="unknown_exception">Unknown exception</string>
+    <string name="restart_app">Open App Again</string>
+    <!--Menu-->
+    <string name="activity_main_menu_dashboard">Install</string>
+    <string name="activity_main_menu_setting">Setting</string>
+    <string name="activity_main_menu_history">History</string>
+    <string name="activity_main_menu_help">Help</string>
+    <!--SIGN UP-->
+    <string name="str_sign_up">Sign up</string>
+    <string name="str_sign_up_name">Name</string>
+    <string name="str_sign_up_business_name">Business name</string>
+    <string name="str_sign_up_mobile_no">Mobile no.</string>
+    <string name="str_sign_up_email_address">Email</string>
+    <string name="str_sign_up_address">Address</string>
+
+    <string name="str_sign_up_enter_name">Enter username</string>
+    <string name="str_sign_up_enter_business_name">Enter business name</string>
+    <string name="str_sign_up_enter_email_address">Enter email address</string>
+    <string name="str_sign_up_enter_valid_email_address">Enter valid email address</string>
+    <string name="str_sign_up_enter_mobile_no">Enter your mobile no</string>
+    <string name="str_sign_up_enter_valid_mobile_no">Enter valid mobile no</string>
+    <string name="str_sign_up_enter_address">Enter address</string>
+    <string name="str_sign_up_enname">Please enter username</string>
+    <string name="str_register">Register</string>
+    <string name="str_profile_updated_success">Profile updated successfully.</string>
+    <string name="str_sign_up_already_account">Already account? SignIn here</string>
+    <string name="str_sign_up_i_agree">I agree to </string>
+    <string name="str_sign_up_terms_condition">Terms &amp; Condition</string>
+    <string name="str_sign_up_agree_terms_condition">Please agree to terms and condition</string>
+    <!--Login-->
+    <string name="str_sign">Sign In</string>
+    <string name="str_login_username">Username</string>
+    <string name="str_login_password">Password</string>
+    <string name="str_login">Login</string>
+    <string name="str_login_forgot_password">Forgot password?</string>
+    <string name="str_login_enter_password">Please enter your password</string>
+    <string name="str_password_link">Your password sent successfully. please check your mobile no.</string>
+    <string name="str_login_dont_account">Don\'t have an account? Signup here</string>
+    <string name="str_login_remember_pw">Remember Me</string>
+    <!--Forgot Password-->
+    <string name="str_forgot_password_lbl">Enter your registered email to get password</string>
+    <!--Verify Account-->
+    <string name="str_verify_account">Verify Account</string>
+    <string name="str_verify_account_verify">Submit</string>
+    <string name="str_verify_account_enter_pin">Please enter 4 digt pin.</string>
+    <string name="str_verify_account_lable_pin">Enter your 4 digit verification code which sent to your email id to verify your account.</string>
+    <string name="str_verify_account_not_receive_otp">Didn\'t receive the OTP?</string>
+    <string name="str_verify_account_resend_otp">Resend OTP</string>
+    <string name="str_verify_account_confirm_resend_otp">Are you sure want resend OTP?</string>
+
+    <!--Set Password-->
+    <string name="str_set_password">Set Password</string>
+    <string name="str_set_password_conf_pw">Confirm Password</string>
+    <string name="str_set_password_enter_conf_pw">Please enter confirm password</string>
+    <string name="str_set_password_pw_not_match">Password and confirm password does not match.</string>
+    <string name="str_set_password_signup_success">Your account has been created successfully. Please login with your credentials.</string>
+    <!--Fragment Dashboard-->
+    <string name="str_dashboard_welcome">Welcome %1$s</string>
+    <string name="str_dashboard_total_installation">Total Installation : %1$s</string>
+    <string name="str_dashboard_total_installations">Total Installations : %1$s</string>
+    <string name="str_dashboard_title">Dashboard</string>
+    <string name="str_dashboard_menu_new_installation">Installation</string>
+    <string name="str_dashboard_menu_uninstall">Uninstall</string>
+    <string name="str_dashboard_menu_unsynced">Unsynced</string>
+    <string name="str_dashboard_menu_install_guide">Install Guide</string>
+    <string name="str_dashboard_menu_inspection">Inspection</string>
+    <string name="str_dashboard_menu_legal_docs">Legal Docs</string>
+
+    <!--Fragment Update Profile-->
+    <string name="str_update_profile">User Profile</string>
+
+    <!--Fragment Change Password-->
+    <string name="str_change_password">Change Password</string>
+    <string name="str_change_pw_current_pw">Current Password</string>
+    <string name="str_change_pw_current_new">New Password</string>
+    <string name="str_change_pw_enter_current_pw">Please enter current password</string>
+    <string name="str_change_pw_enter_new_pw">Please enter new password</string>
+    <string name="str_change_pw_enter_conf_pw">Please enter confirm password</string>
+    <string name="str_change_pw_pw_not_match">New password and confirm password does not match.</string>
+
+    <!--Fragment Settings-->
+    <string name="str_settings">Settings</string>
+    <string name="str_settings_select_language">Select language</string>
+    <string name="str_settings_select_date_format">Change date format</string>
+    <string name="str_settings_change_password">Change password</string>
+    <string name="str_settings_contact_us">Contact us</string>
+    <string name="str_settings_logout">Logout</string>
+    <!--FragmentInstall One-->
+    <string name="str_frg_one_edit_installation">Edit Installation</string>
+    <string name="str_frg_one_scan_device">Scan Device</string>
+    <string name="str_frg_one_device_type">Device Type</string>
+    <string name="str_frg_one_select_device_type">Select Device Type</string>
+    <string name="str_frg_one_test_device">Test Device</string>
+    <string name="str_frg_one_get_device_id">Please get device id first by using Scan device option.</string>
+    <string name="str_frg_one_select_device_msg">Please select device type.</string>
+    <string name="str_frg_one_last_install_location">Last location</string>
+    <string name="str_frg_one_last_install_date">Last install date</string>
+    <!--FragmentInstall Two-->
+    <string name="str_frg_two_latitude">Latitude</string>
+    <string name="str_frg_two_longitude">Longitude</string>
+    <string name="str_frg_two_vessel_asset_title">Vessel / Asset</string>
+    <string name="str_frg_two_vessel_asset_select_name">Enter Vessel Name</string>
+    <string name="str_frg_two_vessel_asset_enter_vessel_reg_no">Enter vessel registration no</string>
+    <string name="str_frg_two_vessel_asset_name">Vessel Name</string>
+    <string name="str_frg_two_registration_no">Registration No.</string>
+    <string name="str_frg_two_select_power">Select power source</string>
+    <string name="str_frg_two_device_install_location">Device install location eg. up mast</string>
+    <string name="str_frg_two_add_installation_photo">Add Installation Photos</string>
+
+    <string name="str_frg_two_enter_vessel_name">Enter vessel name</string>
+
+    <string name="str_frg_two_select_ins_date">Please set date and time.</string>
+    <string name="str_frg_two_enter_latitude">Please enter latitude.</string>
+    <string name="str_frg_two_enter_longitude">Please enter longitude.</string>
+    <string name="str_frg_two_select_country">Please select country.</string>
+    <string name="str_frg_two_select_vessel_asset_select_name">Please enter Vessel name.</string>
+    <string name="str_frg_two_select_vessel_asset_reg_no">Please enter Registration no.</string>
+    <string name="str_frg_two_select_device_power">Please select power source</string>
+    <string name="str_frg_two_enter_location">Please enter device install location.</string>
+    <string name="str_frg_two_add_missing_image">There is some photos missing for Installation. Please check and add missing photo.</string>
+
+    <!--FragmentInstall Three-->
+    <string name="str_frg_three_owner_name">Owner name</string>
+    <string name="str_frg_three_owner_address_line_one">Address Line</string>
+    <string name="str_frg_three_owner_address_line_two">Address Line 2</string>
+    <string name="str_frg_three_owner_city">Owner City</string>
+    <string name="str_frg_three_owner_state">Owner State</string>
+    <string name="str_frg_three_owner_pincode">Owner Pincode</string>
+    <string name="str_frg_three_owner_email">Owner Email</string>
+    <string name="str_frg_three_owner_phone_no">Owner Phone Number</string>
+
+    <string name="str_frg_three_enter_owner_name">Please enter owner name</string>
+    <string name="str_frg_three_enter_owner_address">Please enter owner address.</string>
+    <string name="str_frg_three_enter_owner_city">Please enter owner city.</string>
+    <string name="str_frg_three_enter_owner_state">Please enter owner state.</string>
+    <string name="str_frg_three_enter_owner_zipcode">Please enter owner zipcode.</string>
+    <string name="str_frg_three_enter_owner_email">Please enter owner email address.</string>
+    <string name="str_frg_three_enter_owner_phonono">Please enter owner mobile number.</string>
+    <string name="str_frg_three_installation_successfully">Installation submitted successfully.</string>
+    <!--Fragment Scan Device-->
+    <string name="str_scan_device">Scan Device</string>
+    <string name="str_scan_device_enter_manually">Enter Manually</string>
+    <string name="str_scan_device_imei_no">Device IMEI No</string>
+    <string name="str_scan_device_enter_imei_no">Enter 15 digits IMEI no</string>
+    <string name="str_scan_device_enter_sixteen_digit_no">This is not valid IMEI code</string>
+    <string name="str_scan_device_sixteen_digit_no">This IMEI code is invalid. It should be 15 digits.</string>
+    <string name="str_scan_device_hint_imei_no">IMEI No</string>
+
+    <!--Fragment Test Device-->
+    <string name="str_test_device">Test Device</string>
+    <string name="str_test_device_alrady_install">This device %1$s is already installed some where. please uninstalled first and then install it.</string>
+    <string name="str_test_device_go_to_dashboard">Go to dashboard</string>
+    <string name="str_test_device_view_last_record">View last installation</string>
+    <string name="str_test_device_ready_to_use">This device %1$s ready to use.</string>
+    <string name="str_test_device_ready_to_uninstall">This device %1$s ready to uninstall.</string>
+    <string name="str_test_device_ready_to_inspect">This device %1$s ready to inspect.</string>
+    <string name="str_test_device_alrady_uninstall">This device %1$s can\'t be uninstalled as its not installed anywhere.</string>
+    <string name="str_test_device_alrady_inspect">This device %1$s can\'t be inspected as its not installed anywhere.</string>
+
+    <string name="str_test_device_information">Previously installed device information.</string>
+    <string name="str_test_device_call_labl">There is no internet connection. Please contact administration by calling bellow contact number.</string>
+    <string name="str_test_device_contact_no">08848056</string>
+    <string name="str_test_device_detail_imei_code">IMEI Code</string>
+    <string name="str_test_device_type">Device Type</string>
+    <string name="str_test_device_detail_installer_name">Installer Name</string>
+    <string name="str_test_device_detail_installed_date">Installed Date</string>
+    <string name="str_test_device_detail_generated_date">Generated Date</string>
+    <string name="str_test_device_detail_longitude">Longitude</string>
+    <string name="str_test_device_detail_latitude">Latitude</string>
+    <string name="str_test_device_detail_vessel_name">Vessel Name</string>
+    <string name="str_test_device_detail_reg_no">Reg. No</string>
+    <string name="str_test_device_install_location">Installed location</string>
+    <string name="str_test_device_see_on_map">See on the Map</string>
+    <string name="str_test_device_status_waiting">WAITING FOR STATUS</string>
+    <string name="str_test_device_status_ready_to_go">READY TO GO!</string>
+    <string name="str_test_device_status_no_reports">NO REPORTS IN PAST 2 HOURS</string>
+    <!--Fragment Installation Photo-->
+    <string name="str_installation_photo">Installation Photo</string>
+    <string name="str_installation_photo_title">Please add photos of your install device. Maximum upload limit is 4.</string>
+    <string name="str_installation_photo_remove_confirmation">Are you sure want to remove this photo?</string>
+    <string name="str_installation_photo_back_confirmation">Are you want to save photo?</string>
+    <string name="str_installation_photo_back_title">Save Photo</string>
+
+    <!--Fragment Uninstall-->
+    <string name="str_uninstall_warranty_status">Warranty Status</string>
+    <string name="str_uninstall_enter_warranty_status">Enter warranty status</string>
+    <string name="str_uninstall_successfully">Report has been uninstalled successfully.</string>
+
+    <!--Fragment Inspection-->
+    <string name="str_inspection_photo">Inspection Photo</string>
+    <string name="str_inspection_three_insp_result">Inspection result - type your findings here</string>
+    <string name="str_inspection_three_enter_insp_result">Enter inspection result</string>
+    <string name="str_inspection_three_select_action_taken">Select action taken</string>
+    <string name="str_inspection_three_insp_photo">Add Inspection Photos</string>
+    <string name="str_inspection_three_insp_action">Action taken</string>
+    <string name="str_inspection_three_insp_warranty_return">Warranty return</string>
+    <string name="str_inspection_three_insp_lable">Please add photos of your inspection device. Maximum upload limit is 4.</string>
+    <string name="str_inspection_three_insp_successfully">Inspection has been submitted successfully.</string>
+    <string name="str_inspection_three_add_missing_image">There is some photos missing for Inspection. Please check and add missing photo.</string>
+    <!--Fragment Unsynced-->
+    <string name="str_unsynced_install">Install</string>
+    <string name="str_unsynced_inspection">Inspection</string>
+    <string name="str_unsynced_uninstall">Uninstall</string>
+
+    <!--Fragment Unsynced Install-->
+    <string name="str_unsynced_install_no_item">No installation record found.</string>
+    <string name="str_unsynced_install_remove_confirmation">Are you sure want to remove this installation?</string>
+    <!--Fragment Unsynced UnInstall-->
+    <string name="str_unsynced_uninstall_no_item">No uninstallation record found.</string>
+    <string name="str_unsynced_uninstall_remove_confirmation">Are you sure want to remove this uninstallation?</string>
+    <!--Fragment Unsynced Inspection-->
+    <string name="str_unsynced_inspection_no_item">No inspection record found.</string>
+    <string name="str_unsynced_inspection_remove_confirmation">Are you sure want to remove this inspection?</string>
+
+    <!--Fragment History-->
+    <string name="str_history_no_record_found">No record found.</string>
+    <string name="str_status_incomplete">INCOMPLETE</string>
+
+    <!--Fragment History Details-->
+    <string name="str_history_details">Report Detail</string>
+    <string name="str_history_details_date">Date</string>
+    <string name="str_history_details_imei_code">IMEI Code</string>
+    <string name="str_history_details_vessel_name">Vessel Name</string>
+    <string name="str_history_details_reg_no">Reg. No</string>
+    <string name="str_history_details_device_type">Device Type</string>
+    <string name="str_history_view_pdf">View PDF</string>
+    <string name="str_history_view_install_record">Last Install Record</string>
+
+    <!--Fragment View PDF-->
+    <string name="str_view_pdf_view_report">View Report</string>
+
+    <!--Fragment Signature-->
+    <string name="str_frg_three_sign">Signatures</string>
+    <string name="str_frg_three_sign_here_installer">Tap here for installer sign</string>
+    <string name="str_frg_three_sign_here_uninstaller">Tap here for uninstaller sign</string>
+    <string name="str_frg_three_sign_here_inspector">Tap here for inspector sign</string>
+    <string name="str_frg_three_sign_here">Tap here for owner sign</string>
+    <string name="str_frg_three_draw_sign">Please ask owner to sign.</string>
+    <string name="str_frg_three_ask_installer_sign">Please make Installer\'s sign.</string>
+    <string name="str_uninstall_terms_and_condition">I am satisfied with the de-installation and accept Succorfish T&amp;C\'s</string>
+    <string name="str_frg_three_terms_and_condition">I am satisfied with installation and accept Succorfish T&amp;C\'s</string>
+    <string name="str_frg_three_inspection_terms_and_condition">I am satisfied with inspection and accept Succorfish T&amp;C\'s</string>
+    <string name="str_frg_three_accept_terms_and_condition">Please accept Succorfish T&amp;C\'s</string>
+    <string name="str_frg_three_accept_install_terms_and_condition">Installer must confirm that the Install has been completed as per Succorfish instructions.</string>
+    <string name="str_frg_three_accept_uninstaller_terms_and_condition">Installer must confirm that the uninstall has been completed as per Succorfish instructions.</string>
+    <string name="str_frg_three_accept_inspection_terms_and_condition">Installer must confirm that the inspection has been completed as per Succorfish instructions.</string>
+    <string name="str_frg_three_accept_installer_terms_and_condition">The details entered are correct and Succorfish procedures were followed</string>
+    <string name="str_frg_three_sign_owner_missing_image">There is signature missing for owner. Please ask owner to sign.</string>
+    <string name="str_frg_three_sign_installer_missing_image">There is signature missing for installer. Please make Installer\'s sign.</string>
+    <string name="str_frg_three_sign_uninstaller_missing_image">There is signature missing for uninstaller. Please make Installer\'s sign.</string>
+    <string name="str_frg_three_sign_inspector_missing_image">There is signature missing for inspector. Please make Installer\'s sign.</string>
+    <string name="str_signature_back_confirmation">Are you want to save signatures?</string>
+    <string name="str_signature_back_title">Save Signatures</string>
+
+    <!--Health And Safety-->
+    <string name="str_frg_health_n_safety_title">Health And Safety</string>
+    <string name="str_select_hazards">Select Hazards</string>
+
+    <!--Legal Doc-->
+    <string name="str_terms_n_condition">Succorfish Terms &amp; Conditions</string>
+    <string name="str_warranty">Succorfish Warranty</string>
+    <string name="str_info_privacy_policy">Information Security Privacy Policy</string>
+    <string name="str_health_safety_info">Health &amp; Safety Info</string>
+
+    <!--Install Guide-->
+    <string name="str_land_installation_guide">Land installation Guide</string>
+    <string name="str_marine_installation_guide">Marine installation Guide</string>
+
+    <string-array name="hazards_list">
+        <item>None</item>
+        <item>Working at height</item>
+        <item>Poor Lighting</item>
+        <item>Chemicals/ Harmful substances (Asbestos)</item>
+        <item>Risk to you from others working near</item>
+        <item>Risk to others from you working near</item>
+        <item>Hot work</item>
+        <item>Cold Work</item>
+        <item>Workplace temperature- high/ Low</item>
+        <item>Housekeeping</item>
+        <item>Secure load</item>
+        <item>Poor access/ egress</item>
+        <item>Excessive Vibration from equipment</item>
+        <item>Falling Objects</item>
+        <item>Noise</item>
+        <item>Electricity</item>
+        <item>Tripping hazards</item>
+        <item>Contact with stationary Objects</item>
+        <item>Moving loads</item>
+        <item>Hand tools- check</item>
+        <item>Manual handling</item>
+        <item>Machinery in motion</item>
+        <item>Welding in close proximity to task</item>
+        <item>Dangerous liquid, solid or sludge</item>
+        <item>Lifting</item>
+        <item>Entry into confined / restricted spaces</item>
+        <item>Dust</item>
+        <item>Work on or Near Water</item>
+        <item>Expansion / Contraction</item>
+        <item>Fumes</item>
+        <item>Other</item>
+    </string-array>
+</resources>

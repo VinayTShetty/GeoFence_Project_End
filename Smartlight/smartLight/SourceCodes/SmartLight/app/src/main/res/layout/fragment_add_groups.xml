@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_add_group_textinput_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:hint="@string/frg_add_group_enter_group_name"
+        android:theme="@style/MyEditTextWhite">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/fragment_add_group_edittext_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="text|textNoSuggestions"
+            android:maxLines="1"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhiteLight"
+            android:textSize="@dimen/_14sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/fragment_add_group_textview_add_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_add_group_textinput_group_name"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/colorTransparentRaw"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:text="@string/frg_group_select_un_select_lbl"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14sdp" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/fragment_add_group_swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_add_group_textview_add_device">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_add_group_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_5sdp"
+            android:visibility="visible" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/fragment_add_group_textview_nodevice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_add_group_textview_add_device"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="No device found."
+        android:textColor="@color/colorEmptyList"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone" />
+</RelativeLayout>

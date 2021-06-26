@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Installer.iml" filepath="$PROJECT_DIR$/.idea/modules/Installer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Progress/Installer.Progress.iml" filepath="$PROJECT_DIR$/.idea/modules/Progress/Installer.Progress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Installer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Installer.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ccp/Installer.ccp.iml" filepath="$PROJECT_DIR$/.idea/modules/ccp/Installer.ccp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/signature-pad/Installer.signature-pad.iml" filepath="$PROJECT_DIR$/.idea/modules/signature-pad/Installer.signature-pad.iml" />
+    </modules>
+  </component>
+</project>

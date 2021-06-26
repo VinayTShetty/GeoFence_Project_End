@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_12sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/colorBgTransparent">
+
+    <ImageView
+        android:id="@+id/raw_setup_surface_list_item_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_drawer_message_icon" />
+
+    <TextView
+        android:id="@+id/raw_setup_surface_list_item_textview_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:layout_toRightOf="@+id/raw_setup_surface_list_item_imageview"
+        android:text="Stop"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+{
+  "questions": [
+    {
+      "questionNo": 1,
+      "questionType": 1,
+      "questionName": "Are you wearing the prescribed PPE (including lifejacket if working near water)?",
+      "ansDisplayOption": 2,
+      "chooseAns": 2,
+      "ansComment": "",
+      "ansText": ""
+    },
+    {
+      "questionNo": 2,
+      "questionType": 1,
+      "questionName": "Have you completed your equipment pre-inspection?",
+      "ansDisplayOption": 2,
+      "chooseAns": 2,
+      "ansComment": "",
+      "ansText": ""
+    },
+    {
+      "questionNo": 3,
+      "questionType": 1,
+      "questionName": "Have you completed your pre-inspection for working at height?",
+      "ansDisplayOption": 3,
+      "chooseAns": 2,
+      "ansComment": "",
+      "ansText": ""
+    },
+    {
+      "questionNo": 4,
+      "questionType": 1,
+      "questionName": "Have you reviewed the installation for Asbestos risk?",
+      "ansDisplayOption": 3,
+      "chooseAns": 2,
+      "ansComment": "",
+      "ansText": ""
+    },
+    {
+      "questionNo": 5,
+      "questionType": 1,
+      "questionName": "Do you require service isolation?",
+      "ansDisplayOption": 3,
+      "chooseAns": 2,
+      "ansComment": "",
+      "ansText": ""
+    },
+    {
+      "questionNo": 6,
+      "questionType": 2,
+      "questionName": "Please select hazard from the list below and describe additional precaution taken not listed in the Succorfish Risk Assessment.",
+      "ansDisplayOption": 1,
+      "chooseAns": 0,
+      "ansComment": "",
+      "ansText": ""
+    }
+  ]
+}

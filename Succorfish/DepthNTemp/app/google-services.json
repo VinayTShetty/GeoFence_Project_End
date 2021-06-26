@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "670557662590",
+    "firebase_url": "https://depthntemp.firebaseio.com",
+    "project_id": "depthntemp",
+    "storage_bucket": "depthntemp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670557662590:android:7038f1a090bb6602",
+        "android_client_info": {
+          "package_name": "com.succorfish.depthntemp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670557662590-ig6taal7b5ad1jlqb1q73hohhuqatfsl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg8vb10k_C0QXXtXMxDbzZAefHyHKEpV8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fragment_color_voice_relativelayout_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fragment_color_voice_textview_selected_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_toLeftOf="@+id/fragment_color_voice_ll_menu"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/str_choose_voice_language"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/fragment_color_voice_ll_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="top|right"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_5sdp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fragment_color_voice_floating_btn_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/ic_about_icon"
+                    android:tint="@color/colorBlueTheme"
+                    android:visibility="visible"
+                    app:backgroundTint="@color/colorWhite"
+                    app:elevation="@dimen/_3sdp"
+                    app:fabSize="mini"
+                    app:layout_anchorGravity="bottom|right|end"
+                    tools:ignore="RtlHardcoded" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fragment_color_voice_floating_btn_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/fragment_color_voice_floating_btn_info"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/ic_language"
+                    android:tint="@color/colorBlueTheme"
+                    android:visibility="visible"
+                    app:backgroundTint="@color/colorWhite"
+                    app:elevation="@dimen/_3sdp"
+                    app:fabSize="mini"
+                    app:layout_anchorGravity="bottom|right|end"
+                    tools:ignore="RtlHardcoded" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fragment_color_voice_floating_btn_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/fragment_color_voice_floating_btn_info"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:src="@drawable/ic_menu_settings"
+                    android:tint="@color/colorBlueTheme"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/colorWhite"
+                    app:elevation="@dimen/_3sdp"
+                    app:fabSize="mini"
+                    app:layout_anchorGravity="bottom|right|end"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_color_voice_relativelayout_voice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/frg_color_voice_llayout_bottom"
+            android:layout_below="@+id/fragment_color_voice_relativelayout_menu"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/fragment_color_voice_relativelayout_voice_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_voice_bg_icon"
+                    android:tint="@color/colorWhite" />
+
+                <ImageView
+                    android:id="@+id/fragment_color_voice_imageview_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_voice_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fragment_color_voice_textview_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_color_voice_relativelayout_voice_icon"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_5sdp"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollbars="none">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <LinearLayout
+            android:id="@+id/frg_color_voice_llayout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fragment_color_voice_textview_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_color_voice_textview_result"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:text="Tap on the mic and speak color name to change light color."
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/fragment_color_voice_textview_tag"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="@dimen/_5sdp"-->
+            <!--android:paddingLeft="@dimen/_10sdp"-->
+            <!--android:paddingRight="@dimen/_10sdp"-->
+            <!--android:paddingTop="@dimen/_3sdp"-->
+            <!--android:text="Note : Please make sure selected language is active in voice setting. if not tap on setting icon to active."-->
+            <!--android:textColor="@color/colorWhite"-->
+            <!--android:textSize="@dimen/_12sdp"-->
+            <!--android:visibility="gone" />-->
+        </LinearLayout>
+    </RelativeLayout>
+    <!--</ScrollView>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Fisherman</string>
+    <string name="action_settings">Settings</string>
+
+    <!--GLOBAL-->
+    <string name="str_server_error_try_again">Server connection error. Please try again.</string>
+    <string name="str_server_error_someting_wrong">Something went wrong. Please try again.</string>
+    <string name="str_no_more_data_found">No more data found.</string>
+    <string name="str_no_internet_connection">No internet connection.</string>
+    <string name="str_ok">OK</string>
+    <string name="str_yes">Yes</string>
+    <string name="str_no">No</string>
+    <string name="str_done">Done</string>
+    <string name="str_search">Search here by Vessel Name</string>
+    <string name="str_back">Back</string>
+    <string name="str_next">Next</string>
+    <string name="str_go_back">Go Back</string>
+    <string name="str_choose_option">Choose Option</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_view_photo">View Photo</string>
+    <string name="str_submit">Submit</string>
+    <string name="str_send">Send</string>
+    <string name="str_view">View</string>
+    <string name="str_share">Share</string>
+    <string name="str_save">Save</string>
+    <string name="str_start">Start</string>
+    <string name="str_stop">Stop</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_camera">Camera</string>
+    <string name="str_gallery">Gallery</string>
+    <string name="str_call">Call</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_remove">Remove</string>
+    <string name="str_press_back_again">Please press again to exit.</string>
+    <string name="str_exit_confirmation">Are you sure want to exit?</string>
+    <string name="str_back_confirmation">Are you sure want to exit without save?</string>
+    <string name="str_logout_confirmation">Are you sure want to logout?</string>
+    <string name="str_logout_session_expired">Your session is expired. please login first.</string>
+    <string name="str_report_submitted">Report has been saved successfully but not submitted to server because of No internet connection. Please sync it later when internet available.</string>
+    <string name="error_occurred">An unexpected error occurred will solve all of your troubles.</string>
+    <string name="error_details">Error details:</string>
+    <string name="unknown_exception">Unknown exception</string>
+    <string name="restart_app">Open App Again</string>
+
+
+    <!--Login-->
+    <string name="str_sign">Sign In</string>
+    <string name="str_login_username">Username</string>
+    <string name="str_login_password">Password</string>
+    <string name="str_login">Login</string>
+    <string name="str_login_forgot_password">Forgot password?</string>
+    <string name="str_login_enter_password">Please enter your password</string>
+    <string name="str_password_link">Your password sent successfully. please check your mobile no.</string>
+    <string name="str_login_dont_account">Don\'t have an account? Signup here</string>
+    <string name="str_login_remember_pw">Remember Me</string>
+    <!--Forgot Password-->
+    <string name="str_forgot_password_lbl">Enter your registered email to get password</string>
+    <string name="str_sign_up_enname">Please enter username</string>
+    <!--Fragment Test Device-->
+    <string name="str_test_device_call_labl">There is no internet connection. Please contact administration by calling bellow contact number.</string>
+    <string name="str_test_device_contact_no">08848056</string>
+    <string name="str_test_device_information">Previously installed device information.</string>
+    <string name="str_test_device_detail_imei_code">IMEI</string>
+    <string name="str_test_device_type">Device Type</string>
+    <string name="str_test_device_detail_installer_name">Installer Name</string>
+    <string name="str_test_device_detail_installed_date">Installed Date</string>
+    <string name="str_test_device_detail_generated_date">Generated Date</string>
+    <string name="str_test_device_detail_longitude">Longitude</string>
+    <string name="str_test_device_detail_latitude">Latitude</string>
+    <string name="str_test_device_detail_vessel_name">Vessel Name</string>
+    <string name="str_test_device_detail_reg_no">Reg. No</string>
+    <string name="str_test_device_install_location">Installed location</string>
+    <string name="str_test_device_see_on_map">See on the Map</string>
+
+    <string name="str_last_reported">Last Reported</string>
+    <string name="str_battery">Battery : </string>
+    <string name="str_power_applied">Power removed : </string>
+    <string name="str_gear_out">Gear IN : </string>
+    <string name="str_RFID">RFID : </string>
+    <string name="activity_main_menu_help">Help</string>
+</resources>

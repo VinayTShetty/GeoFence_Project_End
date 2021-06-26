@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fragment_color_rl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/fragment_color_linearlayout_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparentRaw"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/fragment_color_btn_wheel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text="@string/frg_device_set_color_tab_wheel"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/fragment_color_btn_pattern"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text="@string/frg_device_set_color_tab_solid"
+                    android:textColor="@color/child_menu_unselected"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/fragment_color_btn_white"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text="@string/frg_device_set_color_tab_white"
+                    android:textColor="@color/child_menu_unselected"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/fragment_color_btn_voice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text="@string/frg_device_set_color_tab_voice"
+                    android:textColor="@color/child_menu_unselected"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/fragment_color_btn_rgb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/_7sdp"
+                    android:text="RGB"
+                    android:textColor="@color/child_menu_unselected"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_color_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

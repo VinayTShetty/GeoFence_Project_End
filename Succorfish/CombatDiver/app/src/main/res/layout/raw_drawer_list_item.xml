@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raw_drawer_list_relative_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/raw_drawer_list_item_relativelayout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/raw_drawer_list_item_imageview_menu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_header_add" />
+
+        <TextView
+            android:id="@+id/raw_drawer_list_item_textview_menu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/raw_drawer_list_item_imageview_arrow"
+            android:layout_toRightOf="@+id/raw_drawer_list_item_imageview_menu_icon"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/raw_drawer_list_item_imageview_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_3sdp"
+            android:visibility="gone"
+            android:src="@drawable/ic_forward_arrow" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.8"
+        android:layout_below="@+id/raw_drawer_list_item_relativelayout_content"
+        android:background="@color/colorWhite" />
+</RelativeLayout>

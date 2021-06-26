@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        app:cardBackgroundColor="@color/colorSemiTransparent"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/raw_add_device_rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_2sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/raw_add_device_item_rl_right"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/raw_add_device_item_tv_device_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/raw_add_device_item_tv_device_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/colorWhiteLight"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorWhiteLight" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/raw_add_device_item_tv_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/custom_actionbar_iv_add"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Connect"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="0.01"
+                    android:background="@color/colorWhiteLight" />
+
+                <TextView
+                    android:id="@+id/raw_add_device_item_tv_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Location"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <!--<LinearLayout-->
+    <!--android:id="@+id/frg_device_list_ll_header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="@dimen/_3sdp"-->
+    <!--android:weightSum="3">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/raw_add_device_item_tv_device_name"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_weight="0.9"-->
+    <!--android:ellipsize="end"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="@dimen/_5sdp"-->
+    <!--android:singleLine="true"-->
+    <!--android:text=""-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/_12sdp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/raw_add_device_item_tv_device_id"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_weight="1.4"-->
+    <!--android:ellipsize="end"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="@dimen/_5sdp"-->
+    <!--android:singleLine="true"-->
+    <!--android:text=""-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/_12sdp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/raw_add_device_item_tv_status"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_weight="0.7"-->
+    <!--android:ellipsize="end"-->
+    <!--android:gravity="center"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="Unpair"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/_12sdp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="@dimen/_3sdp"-->
+    <!--android:layout_marginLeft="@dimen/_8sdp"-->
+    <!--android:layout_marginRight="@dimen/_8sdp"-->
+    <!--android:layout_marginTop="@dimen/_3sdp"-->
+    <!--app:cardBackgroundColor="@color/colorSemiTransparent"-->
+    <!--app:cardCornerRadius="@dimen/_3sdp"-->
+    <!--app:cardElevation="@dimen/_3sdp">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/raw_add_device_relativelayout_main"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/raw_add_device_relativelayout_device"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="@dimen/_10sdp"-->
+    <!--android:layout_toLeftOf="@+id/raw_device_imageview_arrow">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/raw_add_device_item_textview_devicename"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Device 1"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/_14sdp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/raw_add_device_item_textview_deviceid"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/raw_add_device_item_textview_devicename"-->
+    <!--android:text="1234567899"-->
+    <!--android:textColor="@color/colorWhiteLight"-->
+    <!--android:textSize="@dimen/_12sdp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/raw_device_imageview_arrow"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:padding="@dimen/_8sdp"-->
+    <!--android:src="@drawable/ic_right_arrow"-->
+    <!--android:tint="@color/colorWhite" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+</android.support.constraint.ConstraintLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>--><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="@color/colorAppTheme">-->
+
+    <!--<android.support.v7.widget.CardView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="@dimen/_8sdp"--><!--android:layout_marginTop="@dimen/_5sdp"--><!--android:layout_marginRight="@dimen/_8sdp"--><!--app:cardBackgroundColor="@color/colorSemiTransparent"--><!--app:cardCornerRadius="@dimen/_3sdp"--><!--app:cardElevation="@dimen/_3sdp">-->
+
+    <!--<LinearLayout--><!--android:id="@+id/raw_add_device_rl_main"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical"--><!--android:padding="@dimen/_2sdp">-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/raw_add_device_rl_device"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_centerVertical="true">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_toLeftOf="@+id/raw_add_device_item_rl_right"--><!--android:orientation="vertical"--><!--android:padding="@dimen/_5sdp">-->
+
+    <!--<TextView--><!--android:id="@+id/raw_add_device_item_tv_device_name"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:text=""--><!--android:textColor="@color/colorWhite"--><!--android:textSize="@dimen/_14sdp" />-->
+
+    <!--<TextView--><!--android:id="@+id/raw_add_device_item_tv_device_id"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:text=""--><!--android:textColor="@color/colorWhiteLight"--><!--android:textSize="@dimen/_12sdp" />--><!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:id="@+id/raw_add_device_item_rl_right"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentRight="true"--><!--android:gravity="right"--><!--android:orientation="vertical"--><!--android:padding="@dimen/_5sdp">-->
+
+    <!--<ImageView--><!--android:id="@+id/raw_add_device_item_iv_location"--><!--android:layout_width="@dimen/_35sdp"--><!--android:layout_height="@dimen/_35sdp"--><!--android:padding="@dimen/_8sdp"--><!--android:src="@drawable/ic_map_marker_white_18dp"--><!--android:visibility="visible" />-->
+
+    <!--<TextView--><!--android:id="@+id/raw_add_device_item_tv_status"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_below="@+id/custom_actionbar_iv_add"--><!--android:text="Connect"--><!--android:textColor="@color/colorWhite"--><!--android:textSize="@dimen/_12sdp" />--><!--</LinearLayout>--><!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>--><!--&lt;!&ndash;<LinearLayout&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/frg_device_list_ll_header"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;--><!--&lt;!&ndash;android:padding="@dimen/_3sdp"&ndash;&gt;--><!--&lt;!&ndash;android:weightSum="3">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/raw_add_device_item_tv_device_name"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_weight="0.9"&ndash;&gt;--><!--&lt;!&ndash;android:ellipsize="end"&ndash;&gt;--><!--&lt;!&ndash;android:gravity="center"&ndash;&gt;--><!--&lt;!&ndash;android:padding="@dimen/_5sdp"&ndash;&gt;--><!--&lt;!&ndash;android:singleLine="true"&ndash;&gt;--><!--&lt;!&ndash;android:text=""&ndash;&gt;--><!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="@dimen/_12sdp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/raw_add_device_item_tv_device_id"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_weight="1.4"&ndash;&gt;--><!--&lt;!&ndash;android:ellipsize="end"&ndash;&gt;--><!--&lt;!&ndash;android:gravity="center"&ndash;&gt;--><!--&lt;!&ndash;android:padding="@dimen/_5sdp"&ndash;&gt;--><!--&lt;!&ndash;android:singleLine="true"&ndash;&gt;--><!--&lt;!&ndash;android:text=""&ndash;&gt;--><!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="@dimen/_12sdp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/raw_add_device_item_tv_status"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_weight="0.7"&ndash;&gt;--><!--&lt;!&ndash;android:ellipsize="end"&ndash;&gt;--><!--&lt;!&ndash;android:gravity="center"&ndash;&gt;--><!--&lt;!&ndash;android:singleLine="true"&ndash;&gt;--><!--&lt;!&ndash;android:text="Unpair"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="@dimen/_12sdp" />&ndash;&gt;--><!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<android.support.v7.widget.CardView&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginBottom="@dimen/_3sdp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginLeft="@dimen/_8sdp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginRight="@dimen/_8sdp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_marginTop="@dimen/_3sdp"&ndash;&gt;--><!--&lt;!&ndash;app:cardBackgroundColor="@color/colorSemiTransparent"&ndash;&gt;--><!--&lt;!&ndash;app:cardCornerRadius="@dimen/_3sdp"&ndash;&gt;--><!--&lt;!&ndash;app:cardElevation="@dimen/_3sdp">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/raw_add_device_relativelayout_main"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/raw_add_device_relativelayout_device"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:padding="@dimen/_10sdp"&ndash;&gt;--><!--&lt;!&ndash;android:layout_toLeftOf="@+id/raw_device_imageview_arrow">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/raw_add_device_item_textview_devicename"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:text="Device 1"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="@color/colorWhite"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="@dimen/_14sdp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/raw_add_device_item_textview_deviceid"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_below="@+id/raw_add_device_item_textview_devicename"&ndash;&gt;--><!--&lt;!&ndash;android:text="1234567899"&ndash;&gt;--><!--&lt;!&ndash;android:textColor="@color/colorWhiteLight"&ndash;&gt;--><!--&lt;!&ndash;android:textSize="@dimen/_12sdp" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/raw_device_imageview_arrow"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;--><!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;--><!--&lt;!&ndash;android:padding="@dimen/_8sdp"&ndash;&gt;--><!--&lt;!&ndash;android:src="@drawable/ic_right_arrow"&ndash;&gt;--><!--&lt;!&ndash;android:tint="@color/colorWhite" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</android.support.v7.widget.CardView>&ndash;&gt;--><!--</RelativeLayout>-->

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/ble_comm_module.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/ble_comm_module.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

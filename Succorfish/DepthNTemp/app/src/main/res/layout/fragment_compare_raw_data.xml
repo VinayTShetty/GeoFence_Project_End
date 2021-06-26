@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/frg_compare_raw_data_ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorHeader"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/frg_compare_raw_data_tv_dive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.7"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Dive"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/frg_compare_raw_data_tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1.7"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="Time"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/frg_compare_raw_data_tv_depth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.8"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="Depth(m)"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/frg_compare_raw_data_tv_temp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.8"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Temp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/frg_compare_raw_data_view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/frg_compare_raw_data_ll_header"
+        android:background="@color/colorWhiteLight"></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/frg_compare_raw_data_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frg_compare_raw_data_view_divider"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/frg_compare_raw_data_rl_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/frg_compare_raw_data_tv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_10sdp"
+            android:text="Data not found."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

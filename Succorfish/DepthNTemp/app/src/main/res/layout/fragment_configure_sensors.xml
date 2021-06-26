@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.ogaclejapan.smarttablayout.SmartTabLayout-->
+    <!--android:id="@+id/frg_configure_sensor_smart_tab"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/_40sdp"-->
+    <!--android:background="@color/colorTab"-->
+    <!--app:stl_defaultTabTextColor="@color/colorWhite"-->
+    <!--app:stl_defaultTabTextHorizontalPadding="24dp"-->
+    <!--app:stl_distributeEvenly="true"-->
+    <!--app:stl_indicatorColor="@color/colorWhite"-->
+    <!--app:stl_indicatorInterpolation="linear"-->
+    <!--app:stl_indicatorThickness="3dp"-->
+    <!--app:stl_titleOffset="auto_center"-->
+    <!--app:stl_underlineThickness="1dp" />-->
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/frg_configure_sensor_smart_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@color/colorTab"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/colorWhite"
+        app:tabTextColor="@color/colorWhite" />
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/frg_configure_sensor_smart_tab"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/frg_configure_sensor_viewpager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/frg_configure_sensor_smart_tab"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+</RelativeLayout>

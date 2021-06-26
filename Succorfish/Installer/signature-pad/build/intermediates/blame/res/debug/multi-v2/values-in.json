@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/vinay/geofence/master/Installer/signature-pad/build/intermediates/res/merged/debug/values-in/values-in.xml",
+            "map": [
+                {
+                    "source": "/home/vinay/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b76e5cb30481fc7cadd4f83f3e79e19a/res/values-in/values-in.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/vinay/geofence/master/Installer/signature-pad/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml",
+            "map": [
+                {
+                    "source": "/home/vinay/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b76e5cb30481fc7cadd4f83f3e79e19a/res/values-in/values-in.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

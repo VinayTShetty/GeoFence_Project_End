@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_color_wheel_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppTheam">
+
+    <RelativeLayout
+        android:id="@+id/fragment_alarm_color_relativelayout_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparentRaw"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/frg_alarm_selected_color"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <com.libRG.CustomTextView
+            android:id="@+id/frg_alarm_color_selected_color"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center"
+            app:lib_setRadius="@dimen/_8sdp"
+            app:lib_setRoundedBGColor="@color/colorWhite"
+            app:lib_setRoundedBorderColor="@color/colorWhite"
+            app:lib_setRoundedView="true"
+            app:lib_setShape="oval"
+            app:lib_setStrokeWidth="1dp" />
+
+    </RelativeLayout>
+
+    <com.vithamastech.smartlight.Views.ColorPicker
+        android:id="@+id/baseColorPicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frg_alarm_color_rl_bottom"
+        android:layout_below="@+id/fragment_alarm_color_relativelayout_selected" />
+
+    <RelativeLayout
+        android:id="@+id/frg_alarm_color_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/frg_alarm_color_iv_low_brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:srcCompat="@drawable/ic_brightness_low" />
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/frg_alarm_color_indicator_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/frg_alarm_color_iv_full_brightness"
+            android:layout_toRightOf="@+id/frg_alarm_color_iv_low_brightness"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            app:isb_indicator_color="@color/colorWhite"
+            app:isb_indicator_stay="false"
+            app:isb_indicator_text_color="@color/colorBlack"
+            app:isb_indicator_type="circular_bubble"
+            app:isb_max="100"
+            app:isb_min="20"
+            app:isb_progress="100"
+            app:isb_progress_value_float="false"
+            app:isb_show_indicator="false"
+            app:isb_thumb_color="@color/colorWhite"
+            app:isb_thumb_progress_stay="false"
+            app:isb_tick_color="@color/colorWhite"
+            app:isb_track_background_bar_color="@color/colorWhite"
+            app:isb_track_progress_bar_color="@color/colorWhite"
+            app:isb_track_progress_bar_size="@dimen/_3sdp"
+            app:isb_track_rounded_corners="true" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/frg_alarm_color_iv_full_brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_3sdp"
+            app:srcCompat="@drawable/ic_brightness_full" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

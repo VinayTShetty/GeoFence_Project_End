@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_actionbar_relativelayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorToolbarBg">
+
+    <!-- <RelativeLayout
+         android:id="@+id/custom_actionbar_relativelayout_header_search"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/background_gradiant">
+
+         <com.miguelcatalan.materialsearchview.MaterialSearchView
+             android:id="@+id/custome_actionbar_material_searchview"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingBottom="@dimen/_2sdp"
+             android:paddingTop="@dimen/_2sdp" />
+
+     </RelativeLayout>
+ -->
+    <RelativeLayout
+        android:id="@+id/custom_actionbar_relativelayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/colorTransparent"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/custom_actionbar_linearlayout_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/custom_actionbar_imageview_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="@dimen/_8sdp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_setting_logout" />
+
+            <ImageView
+                android:id="@+id/custom_actionbar_imageview_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="@dimen/_8sdp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/custom_actionbar_imageview_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/custom_actionbar_iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="@dimen/_8sdp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_company_icon" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/custom_actionbar_linearlayout_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/custom_actionbar_imageview_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="@dimen/_5sdp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_reload" />
+
+
+            <TextView
+                android:id="@+id/custom_actionbar_textview_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="Add"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

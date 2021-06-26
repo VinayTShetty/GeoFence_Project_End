@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/raw_installation_photo_item_cardview_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:elevation="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/colorAppTheam"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:id="@+id/frg_send_message_popup_select_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+            <RelativeLayout
+                android:id="@+id/frg_send_message_poopup_relativelayout_connectdevice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/poopup_contact_textview_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left"
+                    android:hint="Cancel"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/colorGrayText"
+                    android:textColorHint="@color/colorGrayText"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/poopup_contact_textview_done"
+                    android:layout_toRightOf="@+id/poopup_contact_textview_cancel"
+                    android:gravity="center"
+                    android:hint="Select Contact"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/poopup_contact_textview_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:hint="Done"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/colorGrayText"
+                    android:textColorHint="@color/colorGrayText"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/popup_driver_msg_header_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/frg_send_message_poopup_relativelayout_connectdevice"
+                android:background="@color/colorWhite" />
+
+            <LinearLayout
+                android:id="@+id/frg_message_linearlayout_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popup_driver_msg_header_divider"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:hint="*"
+                    android:textColor="@color/colorRed"
+                    android:textColorHint="@color/colorRed"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Select "
+                    android:textColor="@color/colorGrayText"
+                    android:textColorHint="@color/colorGrayText"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/frg_message_textview_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="Driver Message "
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:hint="to send"
+                    android:textColor="@color/colorGrayText"
+                    android:textColorHint="@color/colorGrayText"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/poopup_contact_textview_send_to_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:hint="Send to All"
+                    android:textColor="@color/colorRed"
+                    android:textColorHint="@color/colorRed"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/poopup_contact_relative_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frg_message_linearlayout_header"
+                android:minHeight="@dimen/_180sdp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/poopup_contact_recyclerview_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/poopup_contact_textview_nocontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/frg_message_txt_no_contact"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_15sdp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

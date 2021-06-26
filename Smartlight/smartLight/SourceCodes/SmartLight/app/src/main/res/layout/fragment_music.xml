@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.vithamastech.smartlight.Views.vumeter.VuMeterView
+                android:id="@+id/vumeter"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:vumeter_backgroundColor="@color/colorWhite"
+                app:vumeter_blockNumber="20"
+                app:vumeter_blockSpacing="@dimen/_1sdp"
+                app:vumeter_speed="30"
+                app:vumeter_startOff="true"
+                app:vumeter_stopSize="@dimen/_1sdp" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_music_relativelayout_voice_icon"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/fragment_music_circleimageview_music"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/_10sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_voice_bg_icon" />
+
+                <ImageView
+                    android:id="@+id/fragment_music_imageview_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_voice_icon" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/fragment_music_button_play_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rounded_button"
+                android:ems="10"
+                android:text="@string/str_start_music_mode"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/volumeLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fragment_music_iv_launch_music"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:padding="@dimen/_3sdp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                app:srcCompat="@drawable/play_circle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_horizontal"
+                android:text="@string/str_start_music_notes"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

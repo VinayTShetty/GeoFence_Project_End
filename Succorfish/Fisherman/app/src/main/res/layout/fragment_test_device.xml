@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_test_device_relativelayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash_bg">
+
+    <RelativeLayout
+        android:id="@+id/fragment_test_device_rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/fragment_search_item_mSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:focusable="false"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:defaultQueryHint="Search here by vessel name"
+            app:divider="@color/colorWhite"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search here by vessel name">
+
+        </android.support.v7.widget.SearchView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fragment_search_item_mSearch"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/colorWhite" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_asset_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_test_device_rl_search"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/fragment_asset_tv_no_asset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_test_device_rl_search"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:text="No asset founds."
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16sdp" />
+</RelativeLayout>

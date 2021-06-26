@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparentRaw"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_showcase_voice_rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/layout_showcase_voice_iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_failer"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/layout_showcase_voice_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:text="List of Commands"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorWhite" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_showcase_voice_btn_action_close"
+            android:layout_below="@+id/layout_showcase_voice_rl_header"
+            android:padding="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:scrollbars="vertical"
+                    android:text="To turn light on/off"
+                    android:textColor="@color/colorWhiteLight"
+                    android:textSize="@dimen/_16sdp" />
+
+                <com.vithamastech.smartlight.Views.flowlayout.FlowLayout
+                    android:id="@+id/layout_showcase_voice_flowlayout_command"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.vithamastech.smartlight.Views.flowlayout.FlowLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:scrollbars="vertical"
+                    android:text="To change color"
+                    android:textColor="@color/colorWhiteLight"
+                    android:textSize="@dimen/_16sdp" />
+
+                <com.vithamastech.smartlight.Views.flowlayout.FlowLayout
+                    android:id="@+id/layout_showcase_voice_flowlayout_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    app:debugDraw="false"
+                    app:layoutDirection="ltr"
+                    app:weightDefault="1.0">
+
+                </com.vithamastech.smartlight.Views.flowlayout.FlowLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

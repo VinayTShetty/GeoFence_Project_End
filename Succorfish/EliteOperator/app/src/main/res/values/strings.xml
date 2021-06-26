@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">EliteOperator</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="default_font" translatable="false">serif</string>
+    <!--Global-->
+    <string name="str_ok">OK</string>
+    <string name="str_yes">YES</string>
+    <string name="str_no">NO</string>
+    <string name="alert_exit">Are you sure want to exit?</string>
+    <string name="str_press_back_again_to_exit">Press back again to exit.</string>
+    <string name="str_drawer_open">drawer_open</string>
+    <string name="str_drawer_close">drawer_close</string>
+    <string name="ble_not_supported">BLE is not supported in this device.</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <!--Fragment Dashboard-->
+    <string name="frg_dashboard_txt_title">Dashboard</string>
+    <string name="frg_dashboard_txt_connect_device">Connect Device</string>
+    <string name="frg_dashboard_txt_surface_setup">Setup Surface</string>
+    <string name="frg_dashboard_txt_no_device">No device found.</string>
+    <string name="frg_dashboard_txt_air">%1$s%%\nAir</string>
+    <!--Fragment Connect Device-->
+    <string name="frg_connct_device_txt_title">Device</string>
+    <string name="frg_connct_device_txt_connect">Connect</string>
+    <string name="frg_connct_device_txt_disconnect">Disconnect</string>
+
+    <!--Fragment Message-->
+    <string name="frg_message_txt_title">Message</string>
+    <string name="frg_message_txt_select_msg">Tap here to select message</string>
+    <string name="frg_message_txt_select_canned_msg">Select canned message</string>
+    <string name="frg_message_txt_no_message">No message found.</string>
+    <string name="frg_message_txt_composed_msg">Compose Message</string>
+    <string name="frg_message_txt_no_contact">No contact found.</string>
+
+    <!--Fragment DriverIOC-->
+    <string name="frg_driver_ioc_txt_title">DriverIoc8</string>
+
+    <!--Fragment Settings-->
+    <string name="frg_setting_txt_title">Settings</string>
+    <string name="frg_setting_txt_setup_device">Setup for Devices</string>
+    <string name="frg_setting_txt_device_setting">Device Setting</string>
+    <string name="frg_setting_txt_user_manual">User Manual</string>
+    <string name="frg_setting_txt_heat_message">Heat Message</string>
+    <string name="frg_setting_txt_compass">Compass</string>
+    <string name="frg_setting_txt_battery_level">Set Battery Level</string>
+    <string name="frg_setting_txt_system_update">System Update</string>
+    <string name="frg_setting_txt_heat_msg">Enter heat message</string>
+
+    <!--Fragment Preference-->
+    <string name="frg_preference_txt_title">Preference</string>
+    <!--Fragment Surface-->
+    <string name="frg_surface_txt_title">Surface Messages</string>
+    <string name="frg_surface_txt_sync_msg">Sync Messages</string>
+    <string name="frg_surface_txt_add_canned_msg">Add Surface Message</string>
+    <string name="frg_surface_txt_edit_canned_msg">Edit Surface Message</string>
+    <!--Fragment Diver-->
+    <string name="frg_diver_txt_title">Diver Messages</string>
+    <string name="frg_surface_txt_add_diver_msg">Add Diver Message</string>
+    <string name="frg_surface_txt_edit_diver_msg">Edit Diver Message</string>
+    <!--Fragment Address Book-->
+    <string name="frg_address_book_txt_title">Address Book</string>
+    <string name="frg_address_book_txt_sync_contact">Sync Contacts</string>
+    <string name="frg_address_book_txt_add_contact">Add Contact</string>
+    <string name="frg_address_book_txt_edit_contact">Edit Contact</string>
+
+    <!--Fragment Message History-->
+    <string name="frg_message_history_txt_title">Message History</string>
+    <string name="frg_message_history_txt_found">No history found.</string>
+
+    <!--Fragment Surface Setup-->
+    <string name="frg_surface_setup_txt_title">Surface Setup</string>
+
+    <string name="frg_location_txt_title">Location</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppTheam">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_color_solid_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/fragment_color_solid_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorSemiTransparentWhite" />-->
+
+            <com.vithamastech.smartlight.Views.SpectrumPalette
+                android:id="@+id/palette"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                app:spectrum_autoPadding="true"
+                app:spectrum_columnCount="4"
+                app:spectrum_outlineWidth="2dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

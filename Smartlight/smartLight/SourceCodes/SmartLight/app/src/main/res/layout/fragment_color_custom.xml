@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSemiTransparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_color_custom_linearlayout_bottom">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:srcCompat="@drawable/unnamed_bulb" />
+
+        <ImageView
+            android:id="@+id/fragment_color_custom_imageview_lamp"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/unnamed_color" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_color_custom_linearlayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible">
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/fragment_color_custom_seekbar_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_8sdp"
+            android:visibility="visible"
+            app:isb_indicator_color="@color/Red"
+            app:isb_indicator_stay="true"
+            app:isb_indicator_text_color="@color/colorWhite"
+            app:isb_indicator_type="circular_bubble"
+            app:isb_max="255"
+            app:isb_min="20"
+            app:isb_progress="255"
+            app:isb_progress_value_float="false"
+            app:isb_show_indicator="false"
+            app:isb_thumb_color="@color/Red"
+            app:isb_thumb_progress_stay="false"
+            app:isb_tick_color="@color/Red"
+            app:isb_touch_to_seek="true"
+            app:isb_track_background_bar_color="@color/colorWhite"
+            app:isb_track_progress_bar_color="@color/Red"
+            app:isb_track_progress_bar_size="@dimen/_5sdp"
+            app:isb_track_rounded_corners="true" />
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/fragment_color_custom_seekbar_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:padding="@dimen/_8sdp"
+            android:visibility="visible"
+            app:isb_indicator_color="@color/Green"
+            app:isb_indicator_stay="true"
+            app:isb_indicator_text_color="@color/colorWhite"
+            app:isb_indicator_type="circular_bubble"
+            app:isb_max="255"
+            app:isb_min="20"
+            app:isb_progress="255"
+            app:isb_progress_value_float="false"
+            app:isb_show_indicator="false"
+            app:isb_thumb_color="@color/Green"
+            app:isb_thumb_progress_stay="false"
+            app:isb_tick_color="@color/Green"
+            app:isb_touch_to_seek="true"
+            app:isb_track_background_bar_color="@color/colorWhite"
+            app:isb_track_progress_bar_color="@color/Green"
+            app:isb_track_progress_bar_size="@dimen/_5sdp"
+            app:isb_track_rounded_corners="true" />
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/fragment_color_custom_seekbar_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:padding="@dimen/_8sdp"
+            android:visibility="visible"
+            app:isb_indicator_color="@color/Blue"
+            app:isb_indicator_stay="true"
+            app:isb_indicator_text_color="@color/colorWhite"
+            app:isb_indicator_type="circular_bubble"
+            app:isb_max="255"
+            app:isb_min="20"
+            app:isb_progress="255"
+            app:isb_progress_value_float="false"
+            app:isb_show_indicator="false"
+            app:isb_thumb_color="@color/Blue"
+            app:isb_thumb_progress_stay="false"
+            app:isb_tick_color="@color/Blue"
+            app:isb_touch_to_seek="true"
+            app:isb_track_background_bar_color="@color/colorWhite"
+            app:isb_track_progress_bar_color="@color/Blue"
+            app:isb_track_progress_bar_size="@dimen/_5sdp"
+            app:isb_track_rounded_corners="true" />
+    </LinearLayout>
+</RelativeLayout>

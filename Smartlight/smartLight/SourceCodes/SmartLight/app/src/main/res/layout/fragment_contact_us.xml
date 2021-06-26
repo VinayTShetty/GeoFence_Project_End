@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:id="@+id/frg_contact_us_rl_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:srcCompat="@drawable/map_marker" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@id/ivAddress"
+                    android:text="@string/frg_contact_us_lbl_address"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAddress"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_toRightOf="@id/ivAddress"
+                    android:text="@string/frg_contact_us_address"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/colorDivider" />
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/frg_contact_us_rl_call"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+                <!--android:clickable="true"-->
+                <!--android:padding="@dimen/_10sdp"-->
+                <!--android:visibility="gone">-->
+
+                <!--<android.support.v7.widget.AppCompatImageView-->
+                    <!--android:id="@+id/ivMobile"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="@dimen/_5sdp"-->
+                    <!--android:layout_marginTop="@dimen/_2sdp"-->
+                    <!--app:srcCompat="@drawable/phone" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tvMobile"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:layout_toRightOf="@id/ivMobile"-->
+                    <!--android:text="@string/frg_contact_us_lbl_mobile"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+                    <!--android:textColor="@color/colorWhite" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/tvMobile"-->
+                    <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                    <!--android:layout_marginTop="@dimen/_2sdp"-->
+                    <!--android:layout_toRightOf="@id/ivMobile"-->
+                    <!--android:text="@string/frg_contact_us_mobile"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+                    <!--android:textColor="@color/colorWhite" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginBottom="@dimen/_3sdp"-->
+                <!--android:layout_marginLeft="@dimen/_40sdp"-->
+                <!--android:layout_marginTop="@dimen/_3sdp"-->
+                <!--android:background="@color/colorDivider"-->
+                <!--android:visibility="gone" />-->
+
+            <RelativeLayout
+                android:id="@+id/frg_contact_us_rl_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:srcCompat="@drawable/email_plus" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@id/ivEmail"
+                    android:text="@string/frg_contact_us_lbl_email"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvEmail"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_toRightOf="@id/ivEmail"
+                    android:text="@string/frg_contact_us_email"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorWhite" />
+
+                <ImageView
+                    android:id="@+id/imageViewEmailNavigate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_right_gray_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/colorDivider" />
+
+            <RelativeLayout
+                android:id="@+id/frg_contact_us_rl_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:padding="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    app:srcCompat="@drawable/web" />
+
+                <TextView
+                    android:id="@+id/tvWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@id/ivWebsite"
+                    android:text="@string/frg_contact_us_lbl_website"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvWebsite"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_toRightOf="@id/ivWebsite"
+                    android:text="@string/frg_contact_us_website"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorWhite" />
+
+                <ImageView
+                    android:id="@+id/imageViewWebsiteNavigate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_right_gray_arrow" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/colorDivider" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvWebsite"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Follow Us On"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorWhite" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/frg_contact_us_fb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:elevation="5dp"
+                        android:tint="@color/colorWhite"
+                        android:visibility="visible"
+                        app:backgroundTint="#3b5998"
+                        app:elevation="@dimen/_3sdp"
+                        app:fabSize="auto"
+                        app:layout_anchorGravity="center"
+                        app:srcCompat="@drawable/facebook_box" />
+
+                    <!--<android.support.design.widget.FloatingActionButton-->
+                    <!--android:id="@+id/frg_contact_us_twitter"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="@dimen/_2sdp"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:tint="@color/colorWhite"-->
+                    <!--android:visibility="gone"-->
+                    <!--app:backgroundTint="#00aced"-->
+                    <!--app:elevation="@dimen/_3sdp"-->
+                    <!--app:fabSize="auto"-->
+                    <!--app:layout_anchorGravity="center"-->
+                    <!--app:srcCompat="@drawable/twitter" />-->
+
+                    <!--<android.support.design.widget.FloatingActionButton-->
+                    <!--android:id="@+id/frg_contact_us_google"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="@dimen/_2sdp"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:tint="@color/colorWhite"-->
+                    <!--android:visibility="gone"-->
+                    <!--app:backgroundTint="#dd4b39"-->
+                    <!--app:elevation="@dimen/_3sdp"-->
+                    <!--app:fabSize="auto"-->
+                    <!--app:layout_anchorGravity="center"-->
+                    <!--app:srcCompat="@drawable/google_plus_box" />-->
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/frg_contact_us_instagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:elevation="5dp"
+                        android:tint="@color/colorWhite"
+                        android:visibility="visible"
+                        app:backgroundTint="#c32aa3"
+                        app:elevation="@dimen/_3sdp"
+                        app:fabSize="auto"
+                        app:layout_anchorGravity="center"
+                        app:srcCompat="@drawable/ic_instagram" />
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/frg_contact_us_youtube"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:elevation="5dp"
+                        android:tint="@color/colorWhite"
+                        android:visibility="visible"
+                        app:backgroundTint="#bb0000"
+                        app:elevation="@dimen/_3sdp"
+                        app:fabSize="auto"
+                        app:layout_anchorGravity="center"
+                        app:srcCompat="@drawable/youtube" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/frg_contact_us_linked_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:elevation="5dp"
+                        android:tint="@color/colorWhite"
+                        android:visibility="visible"
+                        app:backgroundTint="#007bb6"
+                        app:elevation="@dimen/_3sdp"
+                        app:fabSize="auto"
+                        app:layout_anchorGravity="center"
+                        app:srcCompat="@drawable/linkedin_box" />
+                    <!--<android.support.design.widget.FloatingActionButton-->
+                    <!--android:id="@+id/frg_contact_us_whats_app"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="@dimen/_2sdp"-->
+                    <!--android:elevation="5dp"-->
+                    <!--android:tint="@color/colorWhite"-->
+                    <!--android:visibility="gone"-->
+                    <!--app:backgroundTint="#34af23"-->
+                    <!--app:elevation="@dimen/_3sdp"-->
+                    <!--app:fabSize="auto"-->
+                    <!--app:layout_anchorGravity="center"-->
+                    <!--app:srcCompat="@drawable/whatsapp" />-->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

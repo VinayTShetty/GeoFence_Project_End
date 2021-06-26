@@ -1,0 +1,42 @@
+  {
+  "project_info": {
+    "project_number": "783980241602",
+    "firebase_url": "https://succorfishfisherman.firebaseio.com",
+    "project_id": "succorfishfisherman",
+    "storage_bucket": "succorfishfisherman.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783980241602:android:bfd124e96e2a3669",
+        "android_client_info": {
+          "package_name": "com.succorfish.fisherman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783980241602-avakvofa5khp7k396asia8f8g22ahnp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSMX4KTP-qw2Drxqesmn7ldCs9y8S1zvQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

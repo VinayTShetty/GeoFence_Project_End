@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/dialog_rounded_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Please enter password to connect the device to Wi-Fi network"
+            android:textColor="#384751"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewWifiSSID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Wifi SSID"
+            android:textColor="#384751"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/editTextWifiSSID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_background"
+            android:ems="10"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:hint="SSID"/>
+
+        <TextView
+            android:id="@+id/textViewWifiPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Wifi Password"
+            android:textColor="#384751"
+            android:textSize="10sp" />
+
+        <com.vithamastech.smartlight.Views.CustomEditText
+            android:id="@+id/editTextWifiPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_background"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/ic_baseline_visibility_24"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/buttonNegative"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOT NOW"
+            android:textColor="@color/cancel_color"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/buttonPositive"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            android:textColor="#41AF4B"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

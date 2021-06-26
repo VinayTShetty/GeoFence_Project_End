@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/fragment_device_swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_device_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:visibility="visible" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_device_relativelayout_no_device"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/fragment_device_imageview_bulb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/fragment_device_textview_no_device"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:tint="@color/colorWhite"
+                android:src="@drawable/ic_bulb_icon" />
+
+            <TextView
+                android:id="@+id/fragment_device_textview_no_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:text="@string/frg_device_no_device_found"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp" />
+
+            <Button
+                android:id="@+id/fragment_device_button_add_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_device_textview_no_device"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/rounded_button"
+                android:ems="10"
+                android:minHeight="@dimen/_35sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/frg_device_add_device"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fragment_device_floating_button_add_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:scaleType="center"
+            android:src="@drawable/ic_add_device"
+            android:visibility="visible"
+            android:backgroundTint="@color/colorBlueText"
+            app:borderWidth="@dimen/_1sdp"
+            app:elevation="@dimen/_5sdp"
+            app:fabSize="normal"
+            app:layout_anchorGravity="bottom|right|end"
+            app:useCompatPadding="false"
+            tools:ignore="RtlHardcoded" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/smartlight_fab_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_above="@+id/fragment_device_floating_button_add_device"
+            android:scaleType="center"
+            android:src="@drawable/ic_add_device"
+            android:visibility="visible"
+            android:backgroundTint="@color/colorBlueText"
+            app:borderWidth="@dimen/_1sdp"
+            app:elevation="@dimen/_5sdp"
+            app:fabSize="mini"
+            app:layout_anchorGravity="bottom|right|end"
+            app:useCompatPadding="false"
+            tools:ignore="RtlHardcoded" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/powerSocket_fab_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_above="@+id/smartlight_fab_button"
+            android:scaleType="center"
+            android:src="@drawable/ic_add_device"
+            android:visibility="visible"
+            android:backgroundTint="@color/colorBlueText"
+            app:borderWidth="@dimen/_1sdp"
+            app:elevation="@dimen/_5sdp"
+            app:fabSize="mini"
+            app:layout_anchorGravity="bottom|right|end"
+            app:useCompatPadding="false"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

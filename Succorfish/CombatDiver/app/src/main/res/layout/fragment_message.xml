@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frg_message_coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_home_bg"
+    android:fitsSystemWindows="true">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/frg_message_popup_select_message"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginTop="@dimen/_45sdp"-->
+    <!--android:background="@color/colorBlack"-->
+    <!--android:visibility="visible"-->
+    <!--app:layout_behavior="@string/bottom_sheet_behavior">-->
+
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/frg_message_linearlayout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:hint="*"
+                android:textColor="@color/colorRed"
+                android:textColorHint="@color/colorRed"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Select "
+                android:textColor="@color/colorGrayText"
+                android:textColorHint="@color/colorGrayText"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/frg_message_textview_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="Driver Message "
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="to send"
+                android:textColor="@color/colorGrayText"
+                android:textColorHint="@color/colorGrayText"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/frg_message_cardview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_message_linearlayout_header"
+            android:layout_margin="@dimen/_8sdp"
+            android:elevation="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/colorTransparent"
+            app:cardCornerRadius="@dimen/_8sdp">
+
+            <RelativeLayout
+                android:id="@+id/frg_message_select_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="visible"
+                app:layout_behavior="@string/bottom_sheet_behavior">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/frg_message_recyclerview_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/frg_message_textview_nomessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/frg_message_txt_no_message"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_15sdp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vithamastech.smartlight.Views.CustomToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/raw_days_list_item_toggle_days"
+    android:layout_width="@dimen/_35sdp"
+    android:layout_height="@dimen/_35sdp"
+    android:checked="false"
+    android:textOff="S"
+    android:fontFamily="serif"
+    android:textSize="@dimen/_12sdp"
+    app:checkedTextColor="@color/colorBlack"
+    app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>

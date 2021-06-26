@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_scan_device_relativelayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<me.dm7.barcodescanner.zbar.ZBarScannerView-->
+        <!--android:id="@+id/fragment_scan_device_scannerview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/fragment_scan_device_relativelayout_bottomLayout"-->
+        <!--android:visibility="gone">-->
+
+    <!--</me.dm7.barcodescanner.zbar.ZBarScannerView>-->
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/fragment_scan_device_zxingscannerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_scan_device_relativelayout_bottomLayout"
+        android:visibility="visible">
+
+    </me.dm7.barcodescanner.zxing.ZXingScannerView>
+
+    <RelativeLayout
+        android:id="@+id/fragment_scan_device_relativelayout_bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAppTheme"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/fragment_scan_device_textview_scan_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/str_scan_device_enter_manually"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+</RelativeLayout>

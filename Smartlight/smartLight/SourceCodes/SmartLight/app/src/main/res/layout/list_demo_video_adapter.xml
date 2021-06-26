@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/demoVideoLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/imageViewYoutube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:layout_centerVertical="true"
+        android:src="@drawable/youtube"/>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Video Title"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/_12sdp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageViewYoutube"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_right_gray_arrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorWhite"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+</RelativeLayout>

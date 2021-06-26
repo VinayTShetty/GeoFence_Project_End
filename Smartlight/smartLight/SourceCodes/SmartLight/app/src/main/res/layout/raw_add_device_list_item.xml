@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp">
+
+    <!--  <android.support.v7.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/_5sdp"
+          app:cardCornerRadius="@dimen/_3sdp"
+          app:cardElevation="@dimen/_3sdp">-->
+    <RelativeLayout
+        android:id="@+id/raw_add_device_relativelayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_black">
+
+        <ImageView
+            android:id="@+id/raw_add_device_imageview_device"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:src="@drawable/ic_default_pic"
+            android:tint="@color/colorWhite" />
+
+        <RelativeLayout
+            android:id="@+id/raw_add_device_relativelayout_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/raw_add_device_item_textview_add_remove"
+            android:layout_toRightOf="@+id/raw_add_device_imageview_device"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/raw_add_device_item_textview_devicename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/raw_add_device_item_textview_deviceid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/raw_add_device_item_textview_devicename"
+                android:text=""
+                android:textColor="@color/colorWhiteLight"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/raw_add_device_item_textview_add_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/frg_add_device_btn_add"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/raw_add_device_list_item_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:buttonTint="@color/colorWhite"
+            android:checked="false"
+            android:clickable="false"
+            android:theme="@style/MyCheckBox" />
+
+    </RelativeLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_below="@+id/raw_add_device_relativelayout_main"-->
+    <!--android:background="@color/colorDivider" />-->
+    <!-- </android.support.v7.widget.CardView>-->
+</RelativeLayout>

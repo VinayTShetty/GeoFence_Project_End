@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CombatDiver.iml" filepath="$PROJECT_DIR$/.idea/modules/CombatDiver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Progress/CombatDiver.Progress.iml" filepath="$PROJECT_DIR$/.idea/modules/Progress/CombatDiver.Progress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-radar-master/CombatDiver.android-radar-master.iml" filepath="$PROJECT_DIR$/.idea/modules/android-radar-master/CombatDiver.android-radar-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CombatDiver.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CombatDiver.app.iml" />
+    </modules>
+  </component>
+</project>

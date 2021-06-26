@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:id="@+id/raw_user_list_item_rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_black"
+        android:padding="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:id="@+id/raw_user_list_item_rl_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/raw_user_list_item_iv_delete"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/raw_user_list_item_tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/raw_user_list_item_tv_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/raw_user_list_item_tv_username"
+                android:text=""
+                android:textColor="@color/colorWhiteLight"
+                android:textSize="@dimen/_12sdp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/raw_user_list_item_iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/delete_icon"
+            android:tint="@color/colorWhite" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/raw_bridge_connection_list_item_relativelayout_main"
+        android:background="@color/colorDivider"
+        android:visibility="gone" />
+</RelativeLayout>

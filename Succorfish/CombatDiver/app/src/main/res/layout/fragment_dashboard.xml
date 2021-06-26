@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_home_bg">
+
+    <LinearLayout
+        android:id="@+id/frg_dashboard_linearlayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_2sdp"
+        android:paddingTop="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:id="@+id/frg_dashboard_relativelayout_connect_device"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.05"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/frg_dashboard_imageview_connect_device"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_connected_icon"
+                android:visibility="visible"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="@dimen/_1sdp"
+                app:civ_fill_color="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/frg_dashboard_textview_connect_device"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/frg_dashboard_imageview_connect_device"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/frg_dashboard_txt_connect_device"
+                android:textColor="@color/colorGreen"
+                android:textSize="@dimen/_9sdp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorDividerBlue"
+            android:minHeight="@dimen/_50sdp" />
+
+        <RelativeLayout
+            android:id="@+id/frg_dashboard_relativelayout_battery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.95"
+            android:gravity="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/frg_dashboard_imageview_battery"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_battery_icon"
+                android:visibility="visible"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="@dimen/_1sdp"
+                app:civ_fill_color="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/frg_dashboard_textview_device_bettery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frg_dashboard_imageview_battery"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:text="20%"
+                android:maxLines="2"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_9sdp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorDividerBlue"
+            android:minHeight="@dimen/_50sdp" />
+
+        <RelativeLayout
+            android:id="@+id/frg_dashboard_relativelayout_surface_setup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.05"
+            android:gravity="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/frg_dashboard_imageview_surface_setup"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_sureface_setup_icon"
+                android:visibility="visible"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="@dimen/_1sdp"
+                app:civ_fill_color="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/frg_dashboard_textview_surface_setup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frg_dashboard_imageview_surface_setup"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:text="@string/frg_dashboard_txt_surface_setup"
+                android:maxLines="2"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_9sdp" />
+
+            <!--  <TextView
+                  android:id="@+id/frg_dashboard_textview_surface_setup"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:background="@drawable/textview_rounded_boarder"
+                  android:ems="5"
+                  android:gravity="center"
+                  android:padding="@dimen/_5sdp"
+                  android:text="@string/frg_dashboard_txt_surface_setup"
+                  android:textColor="@color/colorWhite"
+                  android:textSize="@dimen/_12sdp" />-->
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorDividerBlue"
+            android:minHeight="@dimen/_50sdp" />
+
+        <RelativeLayout
+            android:id="@+id/frg_dashboard_relativelayout_compass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.95"
+            android:gravity="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/frg_dashboard_imageview_compass"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_compass_icon"
+                android:visibility="visible"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="@dimen/_1sdp"
+                app:civ_fill_color="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/frg_dashboard_textview_compass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frg_dashboard_imageview_compass"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:text="Compass"
+                android:maxLines="2"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_9sdp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fragment_dashboard_view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/frg_dashboard_linearlayout_header"
+        android:background="@color/colorDividerBlue" />
+
+    <RelativeLayout
+        android:id="@+id/frg_dashboard_relativelayout_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_dashboard_view_divider"
+        android:paddingTop="@dimen/_8sdp"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/frg_dashboard_recyclerview_device"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/frg_dashboard_textview_nodevice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/frg_dashboard_txt_no_device"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15sdp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.succorfish.combatdiver.views.RippleBackground
+        android:id="@+id/frg_dashboard_imageView_scanning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_dashboard_view_divider"
+        android:visibility="visible"
+        app:rb_color="@color/colorGreenLight"
+        app:rb_duration="2500"
+        app:rb_radius="@dimen/_50sdp"
+        app:rb_rippleAmount="2"
+        app:rb_scale="3">
+
+        <ImageView
+            android:id="@+id/frg_dashboardi_mageView_rotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_zoom"
+            android:layout_alignLeft="@+id/imageView_zoom"
+            android:layout_alignRight="@+id/imageView_zoom"
+            android:layout_alignTop="@+id/imageView_zoom"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_scan_icon" />
+    </com.succorfish.combatdiver.views.RippleBackground>
+</RelativeLayout>

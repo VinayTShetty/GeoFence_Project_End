@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raw_connect_device_list_item_linearlayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/colorBgTransparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/raw_connect_device_list_item_relativelayout_connect_disconnect"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/raw_connect_device_list_item_textview_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/_3sdp"
+            android:text="Device "
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/raw_connect_device_list_item_textview_device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:visibility="visible"
+            android:text="Device ID:"
+            android:textColor="@color/colorGrayListText"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/raw_connect_device_list_item_relativelayout_connect_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/raw_connect_device_list_item_textview_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/frg_connct_device_txt_connect"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+</RelativeLayout>

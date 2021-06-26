@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_dashboard"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/activity_main_menu_dashboard" />
+
+        <item
+            android:id="@+id/menu_manage_account"
+            android:icon="@drawable/ic_switch_account_1"
+            android:title="@string/activity_main_menu_account" />
+
+        <item
+            android:id="@+id/menu_factory_reset"
+            android:icon="@drawable/ic_factory_reset"
+            android:title="Factory Reset Device"
+            />
+
+        <item
+            android:id="@+id/menu_help"
+            android:icon="@drawable/ic_user_manual"
+            android:title="@string/activity_main_menu_help" />
+
+        <item
+            android:id="@+id/menu_buy"
+            android:icon="@drawable/buynow"
+            android:title="@string/activity_main_menu_buy" />
+
+        <item
+            android:id="@+id/menu_demo_videos"
+            android:icon="@drawable/youtube"
+            android:title="@string/activity_main_menu_demo_videos" />
+
+        <item
+            android:id="@+id/menu_about_us"
+            android:icon="@drawable/ic_about_icon"
+            android:title="@string/activity_main_menu_about_us" />
+        <item
+            android:id="@+id/menu_contact_us"
+            android:icon="@drawable/phone"
+            android:title="@string/activity_main_menu_contact_us" />
+
+        <item
+            android:id="@+id/menu_alarm"
+            android:icon="@drawable/ic_menu_alarm"
+            android:title="@string/activity_main_menu_alarm" />
+        <item
+            android:id="@+id/menu_device_setting"
+            android:icon="@drawable/active_settings_icon"
+            android:title="@string/activity_main_menu_device_setting" />
+
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/menu_help"-->
+    <!--android:icon="@drawable/ic_user_manual"-->
+    <!--android:title="@string/activity_main_menu_help" />-->
+    <!--<item-->
+    <!--android:id="@+id/menu_contact_us"-->
+    <!--android:icon="@drawable/ic_about_icon"-->
+    <!--android:title="@string/activity_main_menu_contact_us" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

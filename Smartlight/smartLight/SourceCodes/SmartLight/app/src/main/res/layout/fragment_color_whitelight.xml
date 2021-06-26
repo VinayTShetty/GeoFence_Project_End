@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fragment_color_whitelight_imageview_bluetooth"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/activity_main_relativelayout_bottom"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:layout_marginTop="@dimen/_10sdp"-->
+    <!--android:elevation="8dp"-->
+    <!--android:src="@drawable/ic_bluetooth_disconnected"-->
+    <!--android:visibility="visible"-->
+    <!--app:backgroundTint="@color/colorGrayText"-->
+    <!--app:elevation="@dimen/_3sdp"-->
+    <!--app:fabSize="mini"-->
+    <!--app:layout_anchorGravity="bottom|right|end"-->
+    <!--tools:ignore="RtlHardcoded" />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fragment_color_whitelight_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fragment_color_white_light_rl_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@color/colorWhite"
+        android:visibility="visible"
+        app:civ_fill_color="@color/colorWhite" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_color_white_light_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fragment_color_white_light_iv_low_brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_5sdp"
+            app:srcCompat="@drawable/ic_brightness_low" />
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/fragment_color_whitelight_indicator_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/fragment_color_white_light_iv_full_brightness"
+            android:layout_toRightOf="@+id/fragment_color_white_light_iv_low_brightness"
+            android:padding="@dimen/_8sdp"
+            app:isb_indicator_color="@color/Blue"
+            app:isb_indicator_stay="false"
+            app:isb_indicator_text_color="@color/colorBlack"
+            app:isb_indicator_type="circular_bubble"
+            app:isb_max="255"
+            app:isb_min="20"
+            app:isb_progress="255"
+            app:isb_progress_value_float="false"
+            app:isb_show_indicator="true"
+            app:isb_thumb_color="@color/Blue"
+            app:isb_thumb_progress_stay="false"
+            app:isb_tick_color="@color/Blue"
+            app:isb_track_background_bar_color="@color/colorWhite"
+            app:isb_track_progress_bar_color="@color/Blue"
+            app:isb_track_progress_bar_size="@dimen/_3sdp"
+            app:isb_track_rounded_corners="true" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fragment_color_white_light_iv_full_brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/_3sdp"
+            app:srcCompat="@drawable/ic_brightness_full" />
+
+    </RelativeLayout>
+
+
+    <!--<com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar-->
+    <!--android:id="@+id/fragment_color_whitelight_seekBrightness"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="@dimen/_15sdp"-->
+    <!--android:layout_marginLeft="@dimen/_10sdp"-->
+    <!--android:layout_marginRight="@dimen/_10sdp"-->
+    <!--android:layout_marginTop="@dimen/_10sdp"-->
+    <!--app:bar_color="@color/colorBlueBarColor"-->
+    <!--app:bar_highlight_color="@color/colorBlueText"-->
+    <!--app:corner_radius="10"-->
+    <!--android:visibility="gone"-->
+    <!--app:data_type="_integer"-->
+    <!--app:left_thumb_color="@color/colorWhite"-->
+    <!--app:left_thumb_color_pressed="@color/colorWhite"-->
+    <!--app:max_value="255"-->
+    <!--app:min_value="51" />-->
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/bg_white_border"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imageViewSocket"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/socket"/>
+    <TextView
+        android:id="@+id/textViewSocketName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Socket 1"
+        android:layout_weight="1"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <Switch
+        android:id="@+id/switchSocket"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:thumb="@drawable/thumb"
+        android:track="@drawable/track"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:id="@+id/imageViewAlarm"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:src="@drawable/ic_menu_alarm"
+        android:scaleX="0.5"
+        android:scaleY="0.5"/>
+
+</LinearLayout>

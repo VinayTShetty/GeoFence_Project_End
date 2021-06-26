@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/raw_alarm_list_item_relativelayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_black"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/raw_alarm_list_item_relativelayout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/raw_alarm_list_item_linearlayout_right"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/raw_alarm_list_item_textview_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|bottom"
+                        android:text="06:08"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_24sdp" />
+
+                    <TextView
+                        android:id="@+id/raw_alarm_list_item_textview_time_ampm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_2sdp"
+                        android:text="AM"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/raw_alarm_list_item_linearlayout_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/raw_alarm_list_item_textview_on_off_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_2sdp"
+                    android:text="OFF"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.libRG.CustomTextView
+                    android:id="@+id/raw_alarm_list_item_imageview_selected_color"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_toLeftOf="@+id/frg_add_alarm_imageview_arrow"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    app:lib_setRadius="@dimen/_8sdp"
+                    app:lib_setRoundedBGColor="@color/colorWhite"
+                    app:lib_setRoundedBorderColor="@color/colorWhite"
+                    app:lib_setRoundedView="true"
+                    app:lib_setShape="oval"
+                    app:lib_setStrokeWidth="1dp" />
+
+                <ImageView
+                    android:id="@+id/raw_alarm_list_item_imageview_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@android:drawable/ic_menu_delete"
+                    android:visibility="visible" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/raw_alarm_list_item_switch_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:checked="false"
+                    android:padding="@dimen/_5sdp"
+                    android:thumb="@drawable/switch_thumb"
+                    android:visibility="gone"
+                    app:trackTint="@color/colorHeaderBg" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/raw_alarm_list_item_textview_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/raw_alarm_list_item_relativelayout_time"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="MON, TUE, WED, THU, FRI, SAT, SUN"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_marginTop="@dimen/_5sdp"-->
+    <!--android:background="@color/colorDivider" />-->
+</LinearLayout>

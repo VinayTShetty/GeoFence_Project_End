@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fragment_power_strip_relativelayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHeaderBg">
+
+        <TextView
+            android:id="@+id/fragment_power_strip_textview_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="Choose socket to On/Off power strip"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_power_strip_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_power_strip_relativelayout_header"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/fragment_power_strip_textview_nostrip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_power_strip_relativelayout_header"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="No strip light found."
+        android:textColor="@color/colorEmptyList"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="gone" />
+</RelativeLayout>

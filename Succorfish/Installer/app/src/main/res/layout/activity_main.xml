@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_coordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.succorfish.installer.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_relativelayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_splash_bg" />
+
+        <!-- <include
+             android:id="@+id/activity_main_relativelayout_header"
+             layout="@layout/custome_actionbar"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize" />-->
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/activity_main_appbar_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/activity_main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorToolbarBg"
+                android:elevation="@dimen/_3sdp"
+                app:contentInsetStart="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/activity_main_appbar_header"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:id="@+id/activity_main_relativelayout_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/activity_main_relativelayout_bottom"
+                android:background="@color/colorTransparent">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_main_relativelayout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <View
+                    android:id="@+id/activity_main_view_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:background="@color/colorInActiveMenu"
+                    android:visibility="gone" />
+
+                <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+                    android:id="@+id/activity_main_bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activity_main_view_divider"
+                    android:layout_gravity="bottom" />
+
+            </RelativeLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/activity_main_floating_button_bottom_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/activity_main_relativelayout_bottom"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:elevation="5dp"
+                android:visibility="gone"
+                app:backgroundTint="@color/colorBlueTheme"
+                app:elevation="@dimen/_3sdp"
+                app:fabSize="normal"
+                app:layout_anchorGravity="center"
+                app:srcCompat="@drawable/ic_add"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

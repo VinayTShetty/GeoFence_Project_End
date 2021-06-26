@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/alaram_textview_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Alarm 1"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+        <CheckBox
+            android:id="@+id/repeat_alaram_1_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alaram_textview_1"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:checked="false"
+            android:text="Repeat"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/MyCheckBox"></CheckBox>
+
+        <ImageView
+            android:id="@+id/deleteAlaram_1"
+            android:layout_width="35dp"
+            android:layout_height="52dp"
+            android:layout_alignBottom="@+id/repeat_alaram_1_checkBox"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="64dp"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/ic_baseline_delete_forever_24"></ImageView>
+
+        <TextView
+            android:id="@+id/days_alaram_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repeat_alaram_1_checkBox"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Days"
+            android:textColor="@color/colorWhite"></TextView>
+
+        <LinearLayout
+            android:id="@+id/alaram_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/days_alaram_1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:weightSum="7">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/sunday_fabButton_alaram_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="S"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/monday_fabButton_alaram_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="M"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/tuesday_fabButton_alaram_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="T"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/wednesday_fabButton_alaram_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="W"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/thursday_fabButton_alaram_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="T"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/friday_fabButton_alaram_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="F"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/saturday_fabButton_alaram_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="S"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alaram_on_off_timeTextview_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alaram_layout_1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="ON TIME"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="OFF TIME"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alaram_on_off_timeTextview_on_off_oroginal_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alaram_on_off_timeTextview_1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/ontime_Alaram_1_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:gravity="center"
+                android:text="NA"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.005"
+                android:background="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/offtime_Alaram_1_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="NA"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveAlaram_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alaram_on_off_timeTextview_on_off_oroginal_1"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:backgroundTint="@color/colorGreen"
+            android:text="Save"
+            android:textColor="@color/colorWhite"></Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_layout_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_layout_1">
+
+        <TextView
+            android:id="@+id/alaram_textview_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Alarm 1"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp"></TextView>
+
+        <CheckBox
+            android:id="@+id/repeat_alaram_2_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alaram_textview_2"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:checked="false"
+            android:text="Repeat"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/MyCheckBox"></CheckBox>
+
+        <ImageView
+            android:id="@+id/deleteAlaram_2"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignBottom="@+id/repeat_alaram_2_checkBox"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:src="@drawable/ic_baseline_delete_forever_24"></ImageView>
+
+        <TextView
+            android:id="@+id/days_alaram_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repeat_alaram_2_checkBox"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Days"
+            android:textColor="@color/colorWhite"></TextView>
+
+        <LinearLayout
+            android:id="@+id/alaram_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/days_alaram_2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:weightSum="7">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/sunday_fabButton_alaram_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="S"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/monday_fabButton_alaram_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="M"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/tuesday_fabButton_alaram_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="T"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/wednesday_fabButton_alaram_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="W"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/thursday_fabButton_alaram_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="T"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/friday_fabButton_alaram_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="F"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+
+            <com.vithamastech.smartlight.Views.CustomToggleButton
+                android:id="@+id/saturday_fabButton_alaram_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:checked="false"
+                android:fontFamily="serif"
+                android:textOff="S"
+                android:textSize="@dimen/_12sdp"
+                app:checkedTextColor="@color/colorBlack"
+                app:uncheckedTextColor="@color/colorWhite"></com.vithamastech.smartlight.Views.CustomToggleButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alaram_on_off_timeTextview_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alaram_layout_2"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="ON TIME"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="OFF TIME"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/alaram_on_off_timeTextview_on_off_oroginal_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alaram_on_off_timeTextview_2"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/ontime_Alaram_2_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:gravity="center"
+                android:text="NA"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.005"
+                android:background="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/offtime_Alaram_2_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="NA"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveAlaram_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alaram_on_off_timeTextview_on_off_oroginal_2"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@color/colorGreen"
+            android:text="Save"
+            android:textColor="@color/colorWhite"></Button>
+    </RelativeLayout>
+
+</RelativeLayout>

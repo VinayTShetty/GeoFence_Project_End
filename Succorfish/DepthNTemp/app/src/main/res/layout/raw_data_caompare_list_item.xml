@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/frg_device_list_ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_3sdp"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/raw_compare_raw_data_item_tv_drive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.7"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Drive"
+            android:textColor="@color/colorWhiteLightText"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/raw_compare_raw_data_item_tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1.7"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Time"
+            android:textColor="@color/colorWhiteLightText"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/raw_compare_raw_data_item_tv_depth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.8"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Depth"
+            android:textColor="@color/colorWhiteLightText"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/raw_compare_raw_data_item_tv_temp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.8"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Temp"
+            android:textColor="@color/colorWhiteLightText"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/frg_compare_raw_data_view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/frg_device_list_ll_header"
+        android:background="@color/colorWhiteLight"></View>
+</RelativeLayout>

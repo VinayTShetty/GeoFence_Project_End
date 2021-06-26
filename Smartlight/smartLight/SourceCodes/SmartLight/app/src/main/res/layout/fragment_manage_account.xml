@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_setting_manage_account_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_5sdp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/fragment_setting_bridge_conn_tv_no_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_add_device_progress"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/frg_manage_account_no_account_added"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_15sdp"
+        android:visibility="visible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fragment_manage_account_button_add_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:scaleType="center"
+        android:src="@drawable/ic_add_icon"
+        android:visibility="visible"
+        app:backgroundTint="@color/colorBlueText"
+        app:elevation="@dimen/_5sdp"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|right|end"
+        app:useCompatPadding="false"
+        tools:ignore="RtlHardcoded" />
+</RelativeLayout>

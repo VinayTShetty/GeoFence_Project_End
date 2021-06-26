@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app1="http://schemas.and_roid.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_installer_relativelayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/activity_new_installer_relativelayout_stepper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAppTheme"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp">
+
+        <com.succorfish.installer.views.StepperIndicator
+            android:id="@+id/stepperIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app1:stpi_circleColor="#b3bdc2"
+            app1:stpi_circleStrokeWidth="@dimen/_4sdp"
+            app1:stpi_indicatorColor="@color/colorGreen"
+            app1:stpi_indicatorRadius="@dimen/_5sdp"
+            app1:stpi_labelColor="@color/colorGrayText"
+            app1:stpi_lineColor="#b3bdc2"
+            app1:stpi_lineDoneColor="@color/colorGreen"
+            app1:stpi_lineMargin="@dimen/_5sdp"
+            app1:stpi_stepCount="3"
+            app1:stpi_stepsCircleColors="@color/colorGreen"
+            app1:stpi_stepsIndicatorColors="@color/colorGreen" />
+    </RelativeLayout>
+
+    <com.succorfish.installer.views.NonSwipeableViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_new_installer_relativelayout_stepper" />
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/fragment_signature_relativelayout_owner_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ic_login_bg_shadow"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/fragment_signature_txt_owner_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left|center_vertical"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="@string/str_frg_three_sign_here"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragment_signature_txt_owner_signature"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/fragment_signature_imageview_owner_signature"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:scaleType="fitCenter" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/fragment_signature_checkbox_owner_terms_and_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:checked="false"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/str_frg_three_terms_and_condition"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                android:theme="@style/MyCheckBox" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_signature_relativelayout_installer_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_login_bg_shadow"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/fragment_signature_txt_installer_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left|center_vertical"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="@string/str_frg_three_sign_here_installer"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragment_signature_txt_installer_signature"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/fragment_signature_imageview_installer_signature"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:scaleType="fitCenter" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/fragment_signature_checkbox_installer_terms_and_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:checked="false"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/str_frg_three_accept_installer_terms_and_condition"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                android:theme="@style/MyCheckBox" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

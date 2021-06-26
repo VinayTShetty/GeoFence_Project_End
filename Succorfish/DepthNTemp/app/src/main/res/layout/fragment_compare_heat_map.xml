@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:paddingTop="@dimen/_2sdp">
+
+                <com.succorfish.depthntemp.views.VerticalTextView
+                    android:id="@+id/frg_heat_map_tv_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Depth(M)"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/frg_heat_map_line_chart_heat_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_350sdp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/frg_heat_map_tv_temperature" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frg_heat_map_line_chart_heat_map"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/frg_heat_map_tv_temperature"
+                    android:gravity="center"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Time"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_1sdp">
+
+                        <com.libRG.CustomTextView
+                            android:id="@+id/frg_heat_map_tv_very_high_temp_color"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            app:lib_setRoundedBGColor="@color/temp_high"
+                            app:lib_setRoundedView="true"
+                            app:lib_setShape="oval"
+                            app:lib_setStrokeWidth="1dp" />
+
+                        <TextView
+                            android:id="@+id/frg_heat_map_tv_very_high_temp_range"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:ems="7"
+                            android:text="-40 to 85"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_1sdp">
+
+                        <com.libRG.CustomTextView
+                            android:id="@+id/frg_heat_map_tv_high_temp_color"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            app:lib_setRoundedBGColor="@color/temp_high_medium"
+                            app:lib_setRoundedView="true"
+                            app:lib_setShape="oval"
+                            app:lib_setStrokeWidth="1dp" />
+
+                        <TextView
+                            android:id="@+id/frg_heat_map_tv_high_temp_range"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:ems="7"
+                            android:text="-40 to 85"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_1sdp">
+
+                        <com.libRG.CustomTextView
+                            android:id="@+id/frg_heat_map_tv_medium_temp_color"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            app:lib_setRoundedBGColor="@color/temp_medium"
+                            app:lib_setRoundedView="true"
+                            app:lib_setShape="oval"
+                            app:lib_setStrokeWidth="1dp" />
+
+                        <TextView
+                            android:id="@+id/frg_heat_map_tv_medium_temp_range"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:ems="7"
+                            android:text="-40 to 85"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_1sdp">
+
+                        <com.libRG.CustomTextView
+                            android:id="@+id/frg_heat_map_tv_low_temp_color"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            app:lib_setRoundedBGColor="@color/temp_low_medium"
+                            app:lib_setRoundedView="true"
+                            app:lib_setShape="oval"
+                            app:lib_setStrokeWidth="1dp" />
+
+                        <TextView
+                            android:id="@+id/frg_heat_map_tv_low_temp_range"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:ems="7"
+                            android:text="-40 to 85"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_1sdp">
+
+                    <com.libRG.CustomTextView
+                        android:id="@+id/frg_heat_map_tv_very_low_temp_color"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        app:lib_setRoundedBGColor="@color/temp_low"
+                        app:lib_setRoundedView="true"
+                        app:lib_setShape="oval"
+                        app:lib_setStrokeWidth="1dp" />
+
+                    <TextView
+                        android:id="@+id/frg_heat_map_tv_very_low_temp_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:ems="7"
+                        android:text="-40 to 85"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

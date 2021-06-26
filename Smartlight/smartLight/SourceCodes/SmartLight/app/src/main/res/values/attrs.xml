@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomToggleButton">
+        <attr name="borderWidth" format="dimension"></attr>
+        <attr name="checkedColor" format="color"></attr>
+        <attr name="uncheckedColor" format="color"></attr>
+        <attr name="radius" format="dimension"></attr>
+        <attr name="checkedTextColor" format="color"></attr>
+        <attr name="uncheckedTextColor" format="color"></attr>
+
+    </declare-styleable>
+    <declare-styleable name="SpectrumPalette">
+        <attr name="spectrum_colors" />
+        <attr name="spectrum_outlineWidth" />
+        <attr name="spectrum_columnCount" />
+        <attr name="spectrum_autoPadding" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="android:orientation" />
+        <attr name="layoutDirection" format="enum">
+            <enum name="ltr" value="0" />
+            <enum name="rtl" value="1" />
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+        <attr name="weightDefault" format="float" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean" />
+        <attr name="layout_weight" format="float" />
+        <attr name="android:layout_gravity" />
+    </declare-styleable>
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekArcTheme">
+        <attr name="seekArcStyle" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="vumeter_VuMeterView">
+        <attr name="vumeter_backgroundColor" format="color" />
+        <attr name="vumeter_blockNumber" format="integer" />
+        <attr name="vumeter_blockSpacing" format="dimension" />
+        <attr name="vumeter_speed" format="integer" />
+        <attr name="vumeter_stopSize" format="dimension" />
+        <attr name="vumeter_startOff" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PinEntryEditText">
+        <attr name="pinAnimationType" format="enum">
+            <enum name="popIn" value="0" />
+            <enum name="fromBottom" value="1" />
+            <enum name="none" value="-1" />
+        </attr>
+        <attr name="pinCharacterMask" format="string" />
+        <attr name="pinRepeatedHint" format="string" />
+        <attr name="pinLineStroke" format="dimension" />
+        <attr name="pinLineStrokeSelected" format="dimension" />
+        <attr name="pinCharacterSpacing" format="dimension" />
+        <attr name="pinTextBottomPadding" format="dimension" />
+        <attr name="pinLineColors" format="color" />
+        <attr name="pinBackgroundDrawable" format="reference" />
+        <attr name="pinBackgroundIsSquare" format="boolean" />
+    </declare-styleable>
+
+</resources>

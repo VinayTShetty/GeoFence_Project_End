@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_white_border_light"
+    android:orientation="horizontal"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <ImageView
+        android:id="@+id/imageViewSocket"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/socket" />
+
+    <TextView
+        android:id="@+id/textViewSocketName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:text="Socket 1"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioButtonGroupToggle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.6"
+        android:layout_gravity="center"
+        android:background="@drawable/toggle_widget_out_line"
+        android:checkedButton="@+id/offer"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonOff"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_off_background"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:enabled="false"
+            android:text="Off"
+            android:textColor="@color/color_white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:enabled="true"
+            android:layout_weight="1"
+            android:background="@drawable/toggle_widget_on_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="On"
+            android:textColor="@color/color_white" />
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/progressBarWaitMqtt"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageViewAlarm"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/ic_more" />
+
+</LinearLayout>
