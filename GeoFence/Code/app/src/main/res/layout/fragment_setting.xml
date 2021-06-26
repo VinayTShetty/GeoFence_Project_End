@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/splashbg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/Theme.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="false"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/fragment_history_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:src="@drawable/left_arrow" />
+            <TextView
+                android:id="@+id/tool_bar_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                android:text="@string/fragment_setting_Toolbar_header_name"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/beacon_setting_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="300dp"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/fragment_setting_BuzzerTimelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSemiTransparent"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/fragment_setting_BuzzerTimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.30"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/fragment_setting_buzzer"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/fragment_setting_timeResult"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.50"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="2 Sec"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.20"
+                    android:src="@drawable/ic_active_right"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fragment_setting_Reconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSemiTransparent"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Re-connect Device Enable"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"/>
+                <Switch
+                    android:id="@+id/beacon_setting_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:theme="@style/SwitchTheme"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/device_configuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSemiTransparent"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginRight="20dp"
+                    android:text="Set Device configuration"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_active_right"
+                    android:theme="@style/SwitchTheme" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sim_configuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSemiTransparent"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginRight="20dp"
+                    android:text="Set SIM configuration"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:theme="@style/SwitchTheme"
+                    android:src="@drawable/ic_active_right"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/server_configuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSemiTransparent"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginRight="20dp"
+                    android:text="Set Server configuration"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:theme="@style/SwitchTheme"
+                    android:src="@drawable/ic_active_right"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/reset_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSemiTransparent"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginRight="20dp"
+                    android:text="Reset Device"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_active_right"
+                    android:theme="@style/SwitchTheme" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/industry_specific_configuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSemiTransparent"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginRight="20dp"
+                    android:text="Industry Specific Conguration"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_active_right"
+                    android:theme="@style/SwitchTheme" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/wifi_configuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSemiTransparent"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginRight="20dp"
+                    android:text="Wifi Conguration"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_active_right"
+                    android:theme="@style/SwitchTheme" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ota_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSemiTransparent"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginRight="20dp"
+                    android:text="OTA Update"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_active_right"
+                    android:theme="@style/SwitchTheme" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

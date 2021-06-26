@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbg"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#000000"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/Theme.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="false"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/fragment_sim_confi_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:src="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/tool_bar_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                android:text="@string/fragment_Band_configuration_Toolbar_header_name"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sim_confi_save"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="@string/Save_String"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBlack">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+            <RadioButton
+                android:id="@+id/e_sim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorWhite"
+                android:text="E-SIM"
+                android:textColor="@color/colorWhite" />
+            <RadioButton
+                android:id="@+id/nano_sim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/colorWhite"
+                android:text="Nano SIM"
+                android:textColor="@color/colorWhite" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_sim_configuration_URAT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorBlack"
+        android:elevation="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/uart_selected_details"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="URAT Configuration"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:src="@drawable/right"
+            android:theme="@style/SwitchTheme" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_sim_configuration_band"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorBlack"
+        android:elevation="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/band_configuration_details"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="Band Configuration"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:src="@drawable/right"
+            android:theme="@style/SwitchTheme" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+        <EditText
+            android:id="@+id/sim_configuration_enter_APN_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:hint="Enter APN address"
+            android:maxLines="1"
+            android:inputType="text|textNoSuggestions"
+            android:maxLength="32"
+            android:imeOptions="actionNext"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:theme="@style/MyEditTextWhite"
+            android:textSize="@dimen/_12sdp"
+            />
+        <EditText
+            android:id="@+id/sim_configuration_enter_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:hint="Enter User Name"
+            android:inputType="text|textNoSuggestions"
+            android:maxLength="64"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:theme="@style/MyEditTextWhite"
+            android:imeOptions="actionNext"
+            android:textSize="@dimen/_12sdp" />
+        <EditText
+            android:id="@+id/sim_configuration_enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:hint="Enter Password"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:inputType="text|textNoSuggestions"
+            android:maxLength="64"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:theme="@style/MyEditTextWhite"
+            android:imeOptions="actionDone"
+            android:textSize="@dimen/_12sdp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:theme="@style/SwitchTheme" />
+    </LinearLayout>
+</LinearLayout>

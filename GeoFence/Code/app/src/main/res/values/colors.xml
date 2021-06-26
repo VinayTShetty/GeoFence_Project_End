@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <!--Common color Code.-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorAppTheme">#050505</color>
+    <!--Dialog color-->
+    <color name="dialogInfoBackgroundColor">#ffd23b</color>
+    <color name="dialogSuccessBackgroundColor">#12e6cf</color>
+    <color name="dialogErrorBackgroundColor">#e03739</color>
+    <color name="dialogNoticeBackgroundColor">#aeaeae</color>
+    <!--Menu color-->
+    <color name="colorActiveMenu">#FFFFFF</color>
+    <color name="colorInActiveMenu">#737373</color>
+    <!--FragmentSetting-->
+    <color name="colorSemiTransparent">#44000000</color>
+    <color name="colorAppTheam">#050505</color>
+    <!--Back Dialog-->
+    <color name="colorBlueTheme">#050505</color>
+    <!--Launcher BackGround-->
+    <color name="ic_launcher_background">#000000</color>
+    <!--FragmentBand Configuration Color Changes-->
+    <color name="defuatl_color_button">#efe8e6</color>
+    <color name="activate_color_button">#40E511</color>
+    <!--Login Activity colors-->
+    <color name="colorWhiteLight">#90FFFFFF</color>
+    <!--Dialog Fragment PopUp-->
+    <color name="colorGrayText">#737373</color>
+    <color name="colorRed">#aaFF0000</color>
+</resources>

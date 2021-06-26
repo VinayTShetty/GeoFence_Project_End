@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/connect_device"
+        android:title="@string/BOTTOM_NAVIGATION_HOME"/>
+    <item
+        android:id="@+id/remote_tracking"
+        android:enabled="true"
+        android:icon="@drawable/live_location"
+        android:title="@string/BOTTOM_NAVIGATION_REMOTE_TRACKING"/>/>
+</menu>

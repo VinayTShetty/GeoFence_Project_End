@@ -1,0 +1,6 @@
+APK FUNCTIONALITY:-
+1)Encryption/Decryption
+2)Notification
+3)Removal of Bug i.e device Name giving 
+   Ex:- Test 1 1 to 
+	Succorfish sc2 1 is completed.

@@ -1,0 +1,105 @@
+
+
+CREATE TABLE `Action_info_Table` (
+	`id`	INTEGER NOT NULL,
+	`action`	VARCHAR,
+	`action_ID`	VARCHAR,
+	`description`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `Geofence` (
+	`id`	INTEGER NOT NULL,
+	`name`	VARCHAR,
+	`geofence_ID`	VARCHAR,
+	`type`	VARCHAR,
+	`lat`	VARCHAR,
+	`long`	VARCHAR,
+	`radiusOrvertices`	VARCHAR,
+	`number_of_rules`	VARCHAR,
+    `gsm_reporting`	VARCHAR,
+    `iridium_reporting`	VARCHAR,
+	`is_active`	VARCHAR,
+`firmware_timestamp`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `Geofence_alert_Table` (
+	`id`	INTEGER NOT NULL,
+	`geofence_ID`	VARCHAR,
+	`Geo_name`	VARCHAR,
+	`Geo_Type`	VARCHAR,
+	`Breach_Type`	VARCHAR,
+	`Breach_Lat`	VARCHAR,
+	`Breach_Long`	VARCHAR,
+	`BreachRule_ID`	VARCHAR,
+	`BreachRuleValue`	VARCHAR,
+	`date_Time`	VARCHAR,
+	`timeStamp`	VARCHAR,
+	`Rule_Name`	VARCHAR,
+	`is_Read`	VARCHAR,
+	`OriginalRuleValue`	VARCHAR,
+	`bleAddress`	VARCHAR,
+	`Message_one`	VARCHAR,
+	`Message_two`	VARCHAR,
+	`alias_name_alert`	VARCHAR,
+	`geoFence_timestamp`	VARCHAR,
+	`geoFence_lat`	VARCHAR,
+	`geoFence_long`	VARCHAR,
+	`geoFence_radius_vertices`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `Polygon_Lat_Long` (
+	`id`	INTEGER NOT NULL,
+	`geofence_ID`	VARCHAR,
+	`lat`	VARCHAR,
+	`long`	VARCHAR,
+	`geofence_timeStamp`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `Rule_info_Table` (
+	`id`	INTEGER NOT NULL,
+	`Rule`	VARCHAR,
+	`Rule_ID`	VARCHAR,
+	`description`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `Rules_Table` (
+	`id`	INTEGER NOT NULL,
+	`name`	VARCHAR,
+	`geofence_ID`	VARCHAR,
+	`rule_ID`	VARCHAR,
+	`rule_value`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE "tbl_Device" (
+	"id"	integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"BLE_Address"	VARCHAR,
+	"name"	VARCHAR,
+	"imei"	VARCHAR,
+	"device_token"	VARCHAR,
+	"is_active"	VARCHAR
+);
+
+CREATE TABLE `NewChat` (
+	`id`	integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+	`from_name`	varchar ( 255 ),
+	`to_name`	varchar ( 255 ),
+	`msg_txt`	varchar ( 255 ),
+	`time`	varchar ( 255 ),
+	`status`	varchar ( 255 ),
+	`sequence`	varchar ( 255 ),
+	`identifier`	varchar ( 255 ),
+	`timeStamp`	real,
+	`isGSM`	VARCHAR
+);

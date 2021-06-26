@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayout"
+    android:layout_height="wrap_content"
+    android:padding="9dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/listitemdesign">
+    <TextView
+        android:id="@+id/notification_id"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:textSize="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#1976D2"
+        android:background="@drawable/bluelable"/>
+    <TextView
+        android:id="@+id/geofence_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Geofence id: "
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:id="@+id/alias_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="alias_Name"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#A5A2A2"/>
+
+    <TextView
+        android:id="@+id/breach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="MINIMUM DWELL TIME BREACH"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#A5A2A2"/>
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the device entered or exited geofence.the state changed from the previous position"
+        android:textColor="#A5A2A2"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/breach"
+        android:layout_marginRight="15sp"
+        />
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="25-07-2020 12:06:55"
+        android:textSize="10sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="1dp"
+        android:textColor="#A5A2A2"/>
+    <ImageButton
+        android:scaleY="0.9"
+        android:scaleX="0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right"
+        android:layout_marginTop="26dp"
+        android:background="#000"
+        android:layout_alignEnd="@+id/date_time"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/next"
+        android:textColor="#ffffff"
+        />
+</RelativeLayout>

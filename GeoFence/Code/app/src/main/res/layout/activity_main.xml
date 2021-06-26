@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_coordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.succorfish.geofence.MainActivity">
+   <RelativeLayout
+       android:id="@+id/activity_main_relativelayout_main"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="centerCrop"
+          android:src="@drawable/splashbg" />
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+         <RelativeLayout
+             android:id="@+id/mainActivity_container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_above="@+id/bottom_navigation_layout"
+             android:background="@color/colorTransparent">
+         </RelativeLayout>
+         <RelativeLayout
+             android:id="@+id/bottom_navigation_layout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true">
+            <View
+                android:id="@+id/activity_main_view_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha="0.5"
+                android:background="@color/colorInActiveMenu"
+                android:visibility="gone" />
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/home_bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/bottom_navigation_menu"
+                android:layout_gravity="bottom"
+                android:background="@color/colorBlack"
+                app:itemIconTint="@color/bottom_navigation_selectors"
+                app:itemTextColor="@color/bottom_navigation_selectors">
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+         </RelativeLayout>
+      </RelativeLayout>
+   </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

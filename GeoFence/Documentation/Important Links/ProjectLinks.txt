@@ -1,0 +1,10 @@
+Link Reference used for Map.
+
+Code Implementation.
+https://stackoverflow.com/questions/19353255/how-to-put-google-maps-v2-on-a-fragment-using-viewpager
+
+API keyGeneration
+https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+Map API Key:-
+AIzaSyCbIwM00M5BEWBZqMNz1T0AG2o8q5vdlOU

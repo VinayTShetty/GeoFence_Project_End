@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">SC2 Companion </string>
+    <string name="version_name">Version 1.0.6(R)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--dialog Strings-->
+    <string name="ignore_dialog">Ignore</string>
+    <string name="str_see_in_Map">See in Map</string>
+    <string name="map_api_key">AIzaSyCbIwM00M5BEWBZqMNz1T0AG2o8q5vdlOU</string>
+
+
+
+    <!--Bottom Menu-->
+    <!--Menu-->
+    <string name="activity_main_menu_connect_device">Connect Device</string>
+    <string name="activity_main_menu_message">Message</string>
+    <string name="activity_main_menu_setting">Setting</string>
+
+
+<!--            All Fragments String Naming files
+    ==========================================================
+    -->
+
+    <!--Fragment Setting.-->
+    <string name="fragment_setting_Toolbar_header_name">Setting</string>
+    <string name="fragment_setting">Setting</string>
+    <string name="fragment_setting_buzzer">Time interval for Buzzer sound</string>
+    <string name="fragment_setting_dialog_select">Select Time interval</string>
+    <string name="str_done">Done</string>
+
+    <!--Fragment Band Configuration-->
+    <string name="fragment_Band_configuration_Toolbar_header_name">Band Configuration</string>
+
+    <!--Fragment Device Configuration-->
+    <string name="fragment_Device_configuration_Toolbar_header_name">Device Configuration</string>
+
+    <!--Fragment History-->
+    <string name="fragment_history_Toolbar_header_name">History</string>
+    <string name="fragment_history_Toolbar_header_refresh">Refresh</string>
+
+    <!--Fragment Industry Specific Configuration.-->
+    <string name="fragment_IndustrySpecific_Toolbar_header_name">Industry Specific Configuration</string>
+
+    <!--Fragment Live Tracking-->
+    <string name="fragment_LiveTracking_Toolbar_header_name">Live Tracking</string>
+
+<!--    Fragment Map-->
+    <string name="fragment_Map_Toolbar_header_name">Geo Fence Location</string>
+    <!--Fragment Remote Tracking-->
+    <string name="fragment_remoteTracking_Toolbar_header_name">Remote Tracking</string>
+    <!--Fragment Scan-->
+    <string name="fragment_scan_Toolbar_header_name">Geofence</string>
+    <!--Fragment Server Configuration-->
+    <string name="fragment_server_Toolbar_header_name">Server Configuration</string>
+    <!--Fragment Sim Configuration-->
+    <string name="fragment_sim_Toolbar_header_name">Sim Configuration</string>
+    <!--Fragment UART configuration-->
+    <string name="fragment_UART_Toolbar_header_name">UART Configuration</string>
+    <!--Fragment Wifi Configuratoin -->
+    <string name="fragment_WIFI_Toolbar_header_name">Wifi Configuration</string>
+    <!--Fragment SOS Dialog Fragment-->
+    <string name="frg_message_txt_no_message">No Message Found</string>
+
+    <!--Fragment Chatting.-->
+    <string name="fragment_chatting_no_messageFound">No message found</string>
+    <string name="fragment_chatting_toolbar">Messages</string>
+    <string name="fragment_chatting_entermessage">Enter Message</string>
+    <string name="fragment_chatting_incomming_message">IN_COMMING</string>
+    <string name="fragment_chatting_out_going_message">OUT_GOING</string>
+    <string name="fragment_chat_owner_name">USER</string>
+    <string name="fragment_chat_server_name">SERVER</string>
+    <string name="fragment_chat_message_mesaage_failed_app">MESSAGE_FAILED_APP_SIDE</string>
+    <string name="fragment_chat_message_mesaage_invalid_channel_id">INVALID_CHANNEL_ID</string>
+    <string name="fragment_chat_message_mesaage_full_message_recieved_by_device">FULL MESSSAGE RECIEVED BY DEVICE</string>
+    <string name="fragment_chat_message_mesaage_message_sent_gsm">MESSAGE_SENT_GSM</string>
+    <string name="fragment_chat_message_mesaage_failed_message_gsm">MESSAGE_FAILES_GSM</string>
+    <string name="fragment_chat_message_mesaage_send_to_iridium">MESSSAGE_SEND_IRIDIUM</string>
+    <string name="fragment_chat_message_mesaage_server_sending_failed">MESSAGE_FAILED_SERVER</string>
+    <!--Incomming message Recieved From Server-->
+    <string name="fragment_chat_message_mesaage_recieved_from_ble">INCOMMING_MESSAGE_DELIEVERED</string>
+    <string name="fragment_chat_message_mesaage_incomming_message">INCOMMING_MESSAGE</string>
+    <string name="fragment_chat_message_mesaage_outgoing_message">OUTGOING_MESSAGE</string>
+
+    <!--back dialog String-->
+    <string name="str_exit_confirmation">Are you sure want to exit?</string>
+
+    <!--DeviceName-->
+    <string name="device_name_filter">Succorfish SC2</string>
+    <string name="device_name_alias">Succorfish SC2_Gen2_V01</string>
+    <!--    <string name="device_name_alias">Succorfish SC2</string>-->
+    <string name="device_name_alias_save">SC2 Device</string>
+
+    <!--Fragment Scan.-->
+    <string name="Tap_on_Connect_button">Tap on <b><i>Connect</i></b> button to pair with device</string>
+
+    <!--Notification Channel Strings-->
+    <string name="GEO_FENCE_ID">GeoFence ID</string>
+    <string name="GEO_FENCE_ALERTS">GeoFence Alerts</string>
+    <string name="GEO_FENCE_DESCRIPTION">Updates on Alert of GeoFence</string>
+
+    <!--Login Activity-->
+    <string name="login_userName">User Name</string>
+    <string name="login_password">Password</string>
+    <string name="login_remember_me">Remember me</string>
+    <string name="login_Login_button">Login</string>
+
+
+    <!--Dialog Strings-->
+    <string name="Login_Sucessfull">Login Sucessfull</string>
+    <string name="str_ok">Ok</string>
+    <string name="str_no">No Sucessfull</string>
+
+    <!--Preference Helper String-->
+    <string name="pre_ESIM">ESIM</string>
+    <string name="pre_NANO">NANOSIM</string>
+    <!--message packet channel ID-->
+    <string name="GSM">GSM</string>
+    <string name="IRIDIUM">IRIDIUM</string>
+
+
+    <!--New Clean Code BLE Service Code Combining.-->
+    <!--Passing Connection Status of the Device-->
+    <string name="BLUETOOTHLE_SERVICE_CONNECTION_STATUS">BLE_ADDRESS_CONNECTION_STAUS</string>
+    <string name="BLUETOOTHLE_SERVICE_CONNECTION_STATUS_CONNECTED_DISCONNECTED">CONNECTED_DISCONNECTED</string>
+    <string name="BLUETOOTHLE_SERVICE_CONNECTION_STATUS_BLE_ADDRESS">BLE_ADDRESS</string>
+    <!--    send_Confermation_WhatDataWriteen_InFirmware-->
+    <string name="BLUETOOTHLE_SERVICE_DATA_WRITTEN_FOR_CONFERMATION">ACTION_DATA_WRITTEN_IN_FIRMWARE</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_WRITTEN_FOR_CONFERMATION_BLE_ADDRESS">ACTION_DATA_WRITTEN_IN_FIRMWARE_BLE_ADDRESS</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_WRITTEN_FOR_CONFERMATION_BLE_DATA_WRITTEN">ACTION_DATA_WRITTEN_IN_FIRMWARE_DATA_WRITTEN</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_WRITTEN_FOR_CONFERMATION_BLE_DATA_WRITTEN_TYPE">ACTION_DATA_WRITTEN_IN_FIRMWARE_DATA_WRITTEN_TYPE</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_WRITTEN_FOR_CONFERMATION_STATUS">ACTION_DATA_WRITTEN_IN_FIRMWARE_DATA_WRITTEN_STATUS</string>
+    <!--send data obtained from firmware to application.-->
+    <string name="BLUETOOTHLE_SERVICE_DATA_OBTAINED">ACTION_DATA_OBTAINED</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_OBTAINED_BLE_ADDRESS">ACTION_DATA_OBTAINED_BLE_ADDRESS</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_OBTAINED_DATA_RECIEVED">ACTION_DATA_OBTAINED_DATA</string>
+    <!--notification enable-->
+    <string name="BLUETOOTHLE_SERVICE_NOTIFICATION_ENABLE">ENABLE_NOTIFICATION</string>
+    <string name="BLUETOOTHLE_SERVICE_NOTIFICATION_ENABLE_DATA">ENABLE_NOTIFICATION_TRUE_FALSE</string>
+    <string name="BLUETOOTHLE_SERVICE_NOTIFICATION_ENABLE_BLE_AADRESS">ENABLE_NOTIFICATION_BLE_ADDRESS</string>
+
+
+    <!--Main Activity-->
+    <string name="SCAN_STARTED">SCAN_STARTED</string>
+    <string name="SCAN_STOPED">SCAN_STOPED</string>
+
+    <!--Bottom Navigation String-->
+    <string name="BOTTOM_NAVIGATION_HOME">Home</string>
+    <string name="BOTTOM_NAVIGATION_REMOTE_TRACKING">Remote Tracking</string>
+
+    <!--Remote Tracking Fragment-->
+    <string name="REMOTE_FRAGMET_TOOL_BAR_HEADER">Remote Tracking</string>
+    <string name="REMOTE_FRAGMET_TOOL_BAR_REFRESH">Refresh</string>
+
+
+    <!--Common Strings-->
+    <string name="Save_String">Save</string>
+</resources>

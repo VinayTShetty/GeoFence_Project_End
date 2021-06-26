@@ -1,0 +1,226 @@
+Updated New Packet Requirement:-
+------------------------------------------
+
+
+
+After connection and Writing the Authenication, asking for Geo_fence ID Packet Format.
+
+2020-09-14 11:16:26.769 23531-23531/? I/System.out: DATA_FIRMWARE =  a400000012000000000000000000000000000000     // Start Packet
+2020-09-14 11:16:26.769 23531-23531/? I/System.out: DATA_FIRMWARE =  a40100c95f5f03d800ca5f5f03d800cb5f5f03d8    // Pacekts with Data and (ID s and TimeStamp)
+2020-09-14 11:16:26.769 23531-23531/? I/System.out: DATA_FIRMWARE =  a400000000000000000000000000000000000000   // End Packet
+
+
+
+
+Upcode     Length     GeoFence Length
+a4         00 00            0012                    000000000000000000000000000000
+
+
+Upcode   Sequence Number      Geo-Id          TimeStamp            Geo-id     TimeStamp       Geo_id    TimeStamp
+  a6          01               00 c9         5f 5f 03 d8            00 ca    5f 5f 03 d8      00 cb     5f 5f 03 d8
+
+
+Upcode      Length                        Junk Data 
+   a4        00 00             0000000000000000000000000000000000
+
+
+
+Case 1:-(3 TimeStamp)
+--------
+Packet Process Data 
+
+String a6CollectGeoFenceId="a60100c95f5f03d800ca5f5f03d800cb5f5f03d8";
+
+
+        /*
+         Upcode   Sequence Number      Geo-Id          TimeStamp            Geo-id     TimeStamp       Geo_id    TimeStamp
+           a4          01               00 c9         5f 5f 03 d8            00 ca    5f 5f 03 d8      00 cb     5f 5f 03 d8
+        */
+
+        System.out.println("MainActivity_TAG Length of the Packet = "+a6CollectGeoFenceId.length());
+            System.out.println("MainActivity_TAG  Upcode= "+a6CollectGeoFenceId.substring(0,2));
+        System.out.println("MainActivity_TAG Sequence Packet= "+a6CollectGeoFenceId.substring(2,4));
+        System.out.println("MainActivity_TAG (1) GeoFence ID= "+a6CollectGeoFenceId.substring(4,8));
+        System.out.println("MainActivity_TAG (1) GeoFence Stamp= "+a6CollectGeoFenceId.substring(8,16));
+        System.out.println("MainActivity_TAG (2) GeoFence ID= "+a6CollectGeoFenceId.substring(16,20));
+        System.out.println("MainActivity_TAG (2) GeoFence Stamp= "+a6CollectGeoFenceId.substring(20,28));
+        System.out.println("MainActivity_TAG (3) GeoFence ID= "+a6CollectGeoFenceId.substring(28,32));
+        System.out.println("MainActivity_TAG (3) GeoFence TimeStamp = "+a6CollectGeoFenceId.substring(32,40));
+
+o/p:-
+2020-09-14 15:00:46.502 1524-1524/com.UtilityProject I/System.out: MainActivity_TAG Length of the Packet = 40
+2020-09-14 15:00:46.502 1524-1524/com.UtilityProject I/System.out: MainActivity_TAG Sequence Packet= 01
+2020-09-14 15:00:46.502 1524-1524/com.UtilityProject I/System.out: MainActivity_TAG (1) GeoFence ID= 00c9
+2020-09-14 15:00:46.502 1524-1524/com.UtilityProject I/System.out: MainActivity_TAG (1) GeoFence Stamp= 5f5f03d8
+2020-09-14 15:00:46.502 1524-1524/com.UtilityProject I/System.out: MainActivity_TAG (2) GeoFence ID= 00ca
+2020-09-14 15:00:46.502 1524-1524/com.UtilityProject I/System.out: MainActivity_TAG (2) GeoFence Stamp= 5f5f03d8
+2020-09-14 15:00:46.502 1524-1524/com.UtilityProject I/System.out: MainActivity_TAG (3) GeoFence ID= 00cb
+2020-09-14 15:00:46.502 1524-1524/com.UtilityProject I/System.out: MainActivity_TAG (3) GeoFence TimeStamp = 5f5f03d8
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Case 2:-(2 TimeStamp)
+String a6CollectGeoFenceId="a60100c95f5f03d800ca5f5f03d8";
+          System.out.println("MainActivity_TAG Length of the Packet = "+a6CollectGeoFenceId.length());
+        System.out.println("MainActivity_TAG Sequence Packet= "+a6CollectGeoFenceId.substring(2,4));
+        System.out.println("MainActivity_TAG (1) GeoFence ID= "+a6CollectGeoFenceId.substring(4,8));
+        System.out.println("MainActivity_TAG (1) GeoFence Stamp= "+a6CollectGeoFenceId.substring(8,16));
+        System.out.println("MainActivity_TAG (2) GeoFence ID= "+a6CollectGeoFenceId.substring(16,20));
+        System.out.println("MainActivity_TAG (2) GeoFence Stamp= "+a6CollectGeoFenceId.substring(20,28));
+
+        2020-09-14 15:03:34.884 2276-2276/? I/System.out: MainActivity_TAG Length of the Packet = 28
+2020-09-14 15:03:34.884 2276-2276/? I/System.out: MainActivity_TAG Sequence Packet= 01
+2020-09-14 15:03:34.884 2276-2276/? I/System.out: MainActivity_TAG (1) GeoFence ID= 00c9
+2020-09-14 15:03:34.884 2276-2276/? I/System.out: MainActivity_TAG (1) GeoFence Stamp= 5f5f03d8
+2020-09-14 15:03:34.884 2276-2276/? I/System.out: MainActivity_TAG (2) GeoFence ID= 00ca
+2020-09-14 15:03:34.884 2276-2276/? I/System.out: MainActivity_TAG (2) GeoFence Stamp= 5f5f03d8
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Case 3:-(1 TimeStamp)
+ String a6CollectGeoFenceId="a60100c95f5f03d8"; 
+
+        System.out.println("MainActivity_TAG Length of the Packet = "+a6CollectGeoFenceId.length());
+        System.out.println("MainActivity_TAG Sequence Packet= "+a6CollectGeoFenceId.substring(2,4));
+        System.out.println("MainActivity_TAG (1) GeoFence ID= "+a6CollectGeoFenceId.substring(4,8));
+        System.out.println("MainActivity_TAG (1) GeoFence Stamp= "+a6CollectGeoFenceId.substring(8,16));
+
+o/p:-
+2020-09-14 14:59:38.889 1302-1302/? I/System.out: MainActivity_TAG Length of the Packet = 16
+2020-09-14 14:59:38.889 1302-1302/? I/System.out: MainActivity_TAG Sequence Packet= 01
+2020-09-14 14:59:38.889 1302-1302/? I/System.out: MainActivity_TAG (1) GeoFence ID= 00c9
+2020-09-14 14:59:38.889 1302-1302/? I/System.out: MainActivity_TAG (1) GeoFence Stamp= 5f5f03d8
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Circular Geo Fence Packet Format
+********************************
+
+First Packet
+============
+
+ a2         01      0d        00 01     00 37        00        00 00 03 e8               5f 64 43  8f
+Command    Opcode  Length     Geo-ID   Geo-Size      Type	    Number of Vertices         TimeStamp
+
+
+
+   a2        01     09         0001     00 3e         00            0000000c                         01 23 45 67  
+Command    Opcode  Length     Geo-ID   Geo-Size      Type		   (Radius(Type=00)                       (TimeStamp)
+																               (No.of vertices Type=01)
+Second Packet
+=============
+  a2           02       08               41 45 75 d5        42 99 3a e7
+Command		 Opcode   Length 			       Latitude			 Longitude
+
+Third Packet
+============
+
+   a2       03     09             00 00 00 78          00 00 00 00             04
+Command  Opcode	 Length		  Reporting Time     Iridium Reporting Time    No.of Rules
+
+Fourth Packet
+=============
+
+    a2      04         09             01                5f 35 11 ff             00 00 00 01
+Command  Opcode		Length	 		Rule ID			 	    Value			      Action BitMask  
+
+
+ a20409030000000a0000001a
+ a2040904000000050000001a
+ a2040907000000000000006a
+
+
+
+
+
+Fifith Packet
+=============
+   a2       05          01       01
+ Command  Opcode	  Length    Data
+
+*********************************************************************************************************************************************************
+*********************************************************************************************************************************************************
+
+PolyGon Packet Format
+********************************
+
+First Packet
+============
+
+
+New Packet Format:-
+------------------ 
+
+  a2         01      0d        00 01     00 37        00        00 00 03 e8             5f64438f
+Command    Opcode  Length     Geo-ID   Geo-Size      Type	    Number of Vertices         TimeStamp
+  
+
+
+Firmware Changes 1 New Packet Format
+------------------------------------
+Second Packet
+=============
+   a2         02      10          41 45 76 06     42 99 3a d5         41 45 76 3f    42 99 3a e1             00
+ Command    Opcode  Length         Latitude       Longitude          Latitude        Longitude 
+
+
+
+a2010d0001003700000003e85f64438f 
+
+a202104144813b42994a7141448101429949e0
+a20210414481354299494c4144828442994826
+a20210414482ed429947ec41448c4842994899
+a2021041448d13429947e641448f3e429947f7
+a202104144979a42993c10414493ee42993aee
+a202104144914a429939bd41448ddb42993937
+a20210414489e2429938c741448f8842993779
+a202104144a348429935ef4144c3704299346e
+a202104144e545429933e24144ec2342993274
+a202104145024b429930b841451eb9429930e4
+a20210414532fe429930b84145526a429931fe
+a2021041456ba9429932c3414569c542993ae4
+a202104145741342993ab74145746b42993b49
+a202104145654e42993b49414567064299333e
+a2021041456053429932e4414540bb4299323c
+a2021041452fe64299317c41451f6a42993198
+a202104145049f429931444144efab429932f5
+a202104144ecc0429933f24144e76d42993490
+a202104144c4384299352d4144a3c24299369b
+a202104144939d429937fd41448f52429938d3
+a20210414492b1429939984144960442993b14
+a20210414499f842993bf24144907542994829
+a2021041448daf4299481841448c8c429948f1
+a20210414483404299483e4144820742994a61
+a2021041448d4142994a8841448d1042994ac2    
+
+
+  a2        03        09         00 00 00 00                    00 00 00 00                01
+Command   Upcode   Length     GSM Reporting Time          Iridium Reporting Time        Number of Rules
+
+  a2        04       09               04               00 00 00 05               00000018
+Command   Opcode		Length	 		Rule ID			 	             Value			         Action BitMask 
+
+
+   a2      05         01       01
+ Command  Opcode	  Length    Data
+
+ ==============================================================================================================================
+ ==============================================================================================================================
+ A8 Packet Manipulation Start.
+ -----------------------------
+ 
+ a80600015f61f094
+
+Command   Length       ID           TimeStamp
+  a8        06        0001           5f61f094
+
+
+
+  
+        /*Command   Length       ID           TimeStamp
+            a8        06        0001           5f61f094*/
+
+        String a8packetManipulation="a80600015f61f094";
+        System.out.println("MainActivity_Tag Length= "+a8packetManipulation.length());
+        System.out.println("MainActivity_Tag Command= "+a8packetManipulation.substring(0,2));
+        System.out.println("MainActivity_Tag Data Length= "+a8packetManipulation.substring(2,4));
+        System.out.println("MainActivity_Tag ID= "+a8packetManipulation.substring(4,8));
+        System.out.println("MainActivity_Tag TimeStamp= "+a8packetManipulation.substring(8,16));

@@ -1,0 +1,319 @@
+ PolyGon Packet Fomrat Calculation
+ ---------------------------------
+
+ a20109000401bb0100000034
+ a2021041448c7b42994aba41448c9142994a97
+ a202104144813b42994a714144810142994960
+ a20210414481354299494c4144828442994826
+ a20210414482ed429947ec41448c4842994899
+ a2021041448d13429947e641448f3e429947f7
+ a202104144979a42993c10414493ee42993aee
+ a202104144914a429939bd41448ddb42993937
+ a20210414489e2429938c741448f8842993779
+ a202104144a348429935ef4144c3704299346e
+ a202104144e545429933e24144ec2342993274
+ a202104145024b429930b841451eb9429930e4
+ a20210414532fe429930b84145526a429931fe
+ a2021041456ba9429932c3414569c542993ae4
+ a202104145741342993ab74145746b42993b49
+ a202104145654e42993b49414567064299333e
+ a2021041456053429932e4414540bb4299323c
+ a2021041452fe64299317c41451f6a42993198
+ a202104145049f429931444144efab429932f5
+ a202104144ecc0429933f24144e76d42993490
+ a202104144c4384299352d4144a3c24299369b
+ a202104144939d429937fd41448f52429938d3
+ a20210414492b1429939984144960442993b14
+ a20210414499f842993bf24144907542994829
+ a2021041448daf4299481841448c8c429948f1
+ a20210404483404299483e4144820742994a61
+ a2021041448d4142994a8841448d1042994ac2
+ a20309000000000000000001
+ a20409040000000500000018
+ a2050101
+
+
+ Frist Packet Calculation.
+ -------------------------
+        String PolygonStartPacket="a20109000401bb0100000034";
+        System.out.println("MainActivity Total String Length = "+PolygonStartPacket.length());
+        System.out.println("MainActivity Command = "+PolygonStartPacket.substring(0,2));
+        System.out.println("MainActivity Upcode = "+PolygonStartPacket.substring(2,4));
+        System.out.println("MainActivity length = "+PolygonStartPacket.substring(4,6));
+        System.out.println("MainActivity GeoFence ID = "+PolygonStartPacket.substring(6,10)+" Geo  Fence in Decimal = "+HextoInt(PolygonStartPacket.substring(6,10)));
+        System.out.println("MainActivity GeoFence Type= "+checkType(PolygonStartPacket.substring(14,16)));
+        System.out.println("MainActivity Number of Vertices= "+PolygonStartPacket.substring(16,PolygonStartPacket.length())+" In Decimal Value = "+HextoInt(PolygonStartPacket.substring(16,PolygonStartPacket.length())));
+
+
+MainActivity Total String Length = 24
+MainActivity Command = a2
+MainActivity Upcode = 01
+MainActivity length = 09
+MainActivity GeoFence ID = 0004 Geo  Fence in Decimal = 4
+MainActivity GeoFence Type= polygon
+MainActivity Number of Vertices= 00000034 In Decimal Value = 52
+
+
+Second Packet Calculation.
+--------------------------
+
+a)LatLong Packet Calculation (Length 38)
+
+        String latlongPacket_SecondPacket_38="a202104145739442993ad2414568c842993ae6";
+        System.out.println("MainActivity Total String Length = "+latlongPacket_SecondPacket_38.length());
+        System.out.println("MainActivity Command = "+latlongPacket_SecondPacket_38.substring(0,2));
+        System.out.println("MainActivity Upcode = "+latlongPacket_SecondPacket_38.substring(2,4));
+        System.out.println("MainActivity length = "+latlongPacket_SecondPacket_38.substring(4,6));
+        System.out.println("MainActivity (1 st Part) Latitude = "+latlongPacket_SecondPacket_38.substring(6,14)+" Longitude = "+latlongPacket_SecondPacket_38.substring(14,22));
+        System.out.println("MainActivity (2 st Part) Latitude = "+latlongPacket_SecondPacket_38.substring(22,30)+" Longitude = "+latlongPacket_SecondPacket_38.substring(30,latlongPacket_SecondPacket_38.length()));
+
+MainActivity Total String Length = 38
+MainActivity Command = a2
+MainActivity Upcode = 02
+MainActivity length = 10
+MainActivity (1 st Part) Latitude = 41457394 Longitude = 42993ad2
+MainActivity (2 st Part) Latitude = 414568c8 Longitude = 42993ae6
+
+b)LatLong Packet Calculation(Length 22)
+
+        String latlongPacket_SecondPacket_22="a202084145691542993b05";
+        System.out.println("MainActivity Total String Length = "+latlongPacket_SecondPacket_22.length());
+        System.out.println("MainActivity Command = "+latlongPacket_SecondPacket_22.substring(0,2));
+        System.out.println("MainActivity Upcode = "+latlongPacket_SecondPacket_22.substring(2,4));
+        System.out.println("MainActivity length = "+latlongPacket_SecondPacket_22.substring(4,6));
+        System.out.println("MainActivity (1 st Part) Latitude = "+latlongPacket_SecondPacket_22.substring(6,14)+" Longitude = "+latlongPacket_SecondPacket_22.substring(14,22));
+
+MainActivity Total String Length = 22
+MainActivity Command = a2
+MainActivity Upcode = 02
+MainActivity length = 08
+MainActivity (1 st Part) Latitude = 41456915 Longitude = 42993b05
+
+
+Third Packet Calculation
+------------------------
+
+        String ThirdPacket_GSM_Iridium_NoRules="a20309000000000000000001";
+        System.out.println("MainActivity Total String Length = "+ThirdPacket_GSM_Iridium_NoRules.length());
+        System.out.println("MainActivity Command = "+ThirdPacket_GSM_Iridium_NoRules.substring(0,2));
+        System.out.println("MainActivity Upcode = "+ThirdPacket_GSM_Iridium_NoRules.substring(2,4));
+        System.out.println("MainActivity length = "+ThirdPacket_GSM_Iridium_NoRules.substring(4,6));
+        System.out.println("MainActivity GSM Reporting Time =  Value= "+ThirdPacket_GSM_Iridium_NoRules.substring(6,14)+" Hex Value = "+convert4bytes(ThirdPacket_GSM_Iridium_NoRules.substring(6,14)));
+        System.out.println("MainActivity Iridium Reporting Time =  Value= "+ThirdPacket_GSM_Iridium_NoRules.substring(6,14)+" Hex Value = "+convert4bytes(ThirdPacket_GSM_Iridium_NoRules.substring(6,14)));
+        System.out.println("MainActivity Number of Rules "+ThirdPacket_GSM_Iridium_NoRules.substring(22,ThirdPacket_GSM_Iridium_NoRules.length()));
+
+ MainActivity Total String Length = 24
+ MainActivity Command = a2
+ MainActivity Upcode = 03
+ MainActivity length = 09
+ MainActivity GSM Reporting Time =  Value= 00000000 Hex Value = 0
+ MainActivity Iridium Reporting Time =  Value= 00000000 Hex Value = 0
+ MainActivity Number of Rules 01
+
+Fourth Packet Manipulation
+--------------------------
+        String FourthPacket_RuleId_Value_ActionBitMask="a20409040000000500000018";
+        System.out.println("MainActivity Total String Length = "+FourthPacket_RuleId_Value_ActionBitMask.length());
+        System.out.println("MainActivity Command = "+FourthPacket_RuleId_Value_ActionBitMask.substring(0,2));
+        System.out.println("MainActivity Upcode = "+FourthPacket_RuleId_Value_ActionBitMask.substring(2,4));
+        System.out.println("MainActivity length = "+FourthPacket_RuleId_Value_ActionBitMask.substring(4,6));
+        System.out.println("MainActivity Rule Id = "+FourthPacket_RuleId_Value_ActionBitMask.substring(6,8));
+        System.out.println("MainActivity Rule Value = "+FourthPacket_RuleId_Value_ActionBitMask.substring(8,16)+" Rule Value(Hex) ="+convert4bytes(FourthPacket_RuleId_Value_ActionBitMask.substring(8,16)));
+        System.out.println("MainActivity Action Bit Mask = "+FourthPacket_RuleId_Value_ActionBitMask.substring(16,FourthPacket_RuleId_Value_ActionBitMask.length())+" Rule Value(Hex) ="+convert4bytes(FourthPacket_RuleId_Value_ActionBitMask.substring(16,FourthPacket_RuleId_Value_ActionBitMask.length())));
+
+
+ MainActivity Total String Length = 24
+ MainActivity Command = a2
+ MainActivity Upcode = 04
+ MainActivity length = 09
+ MainActivity Rule Id = 04
+ MainActivity Rule Value = 00000005 Rule Value(Hex) =5
+ MainActivity Action Bit Mask = 00000018 Rule Value(Hex) =24
+
+
+
+Fifith Packet Manipulation
+--------------------------
+        String FifthEndingPacket="a2050101";
+        System.out.println("MainActivity Total String Length = "+FifthEndingPacket.length());
+        System.out.println("MainActivity Command = "+FifthEndingPacket.substring(0,2));
+        System.out.println("MainActivity Upcode = "+FifthEndingPacket.substring(2,4));
+        System.out.println("MainActivity length = "+FifthEndingPacket.substring(4,6));
+        System.out.println("MainActivity Data = "+FifthEndingPacket.substring(6,8));
+
+ MainActivity Total String Length = 8
+ MainActivity Command = a2
+ MainActivity Upcode = 05
+ MainActivity length = 01
+ MainActivity Data = 01
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Circular Packet Format
+----------------------
+
+ a2010d00c901cc01000000335f5f07d4
+ a20208414575f542993ae7
+ a20309000000780000000004
+ a20409015f3511ff00000001
+ a20409030000000a00000012
+ a2040904000000050000001a
+ a2040907000000000000006a
+ a2050101
+
+
+Frist Packet Calculation.
+ -------------------------
+     String PolygonStartPacket="a2010d00c901cc01000000335f5f07d4";
+        System.out.println("MainActivity Total String Length = "+PolygonStartPacket.length());
+        System.out.println("MainActivity Command = "+PolygonStartPacket.substring(0,2));
+        System.out.println("MainActivity Upcode = "+PolygonStartPacket.substring(2,4));
+        System.out.println("MainActivity length = "+PolygonStartPacket.substring(4,6));
+        System.out.println("MainActivity GeoFence ID = "+PolygonStartPacket.substring(6,10)+" Geo  Fence in Decimal = "+HextoInt(PolygonStartPacket.substring(6,10)));
+        System.out.println("MainActivity GeoFence Type= "+checkType(PolygonStartPacket.substring(14,16)));
+        System.out.println("MainActivity Number of Vertices= "+PolygonStartPacket.substring(16,24)+" In Decimal Value = "+HextoInt(PolygonStartPacket.substring(16,24)));
+        System.out.println("MainActivity Number of TimeStamp= "+ConvertHexToLong(PolygonStartPacket.substring(24,32)));
+
+2020-09-14 18:13:37.235 16351-16351/com.UtilityProject I/System.out: MainActivity Total String Length = 32
+2020-09-14 18:13:37.235 16351-16351/com.UtilityProject I/System.out: MainActivity Command = a2
+2020-09-14 18:13:37.235 16351-16351/com.UtilityProject I/System.out: MainActivity Upcode = 01
+2020-09-14 18:13:37.235 16351-16351/com.UtilityProject I/System.out: MainActivity length = 0d
+2020-09-14 18:13:37.235 16351-16351/com.UtilityProject I/System.out: MainActivity GeoFence ID = 00c9 Geo  Fence in Decimal = 201
+2020-09-14 18:13:37.236 16351-16351/com.UtilityProject I/System.out: MainActivity GeoFence Type= polygon
+2020-09-14 18:13:37.236 16351-16351/com.UtilityProject I/System.out: MainActivity Number of Vertices= 00000033 In Decimal Value = 51
+2020-09-14 18:13:37.236 16351-16351/com.UtilityProject I/System.out: MainActivity Number of TimeStamp= 1600063444
+
+Second Packet Calculation.
+--------------------------
+LatLong Packet Calculation(Length 22)
+
+        String latlongPacket_SecondPacket_22="a202084145691542993b05";
+        System.out.println("MainActivity Total String Length = "+latlongPacket_SecondPacket_22.length());
+        System.out.println("MainActivity Command = "+latlongPacket_SecondPacket_22.substring(0,2));
+        System.out.println("MainActivity Upcode = "+latlongPacket_SecondPacket_22.substring(2,4));
+        System.out.println("MainActivity length = "+latlongPacket_SecondPacket_22.substring(4,6));
+        System.out.println("MainActivity (1 st Part) Latitude = "+latlongPacket_SecondPacket_22.substring(6,14)+" Longitude = "+latlongPacket_SecondPacket_22.substring(14,22));
+
+MainActivity Total String Length = 22
+MainActivity Command = a2
+MainActivity Upcode = 02
+MainActivity length = 08
+MainActivity (1 st Part) Latitude = 41456915 Longitude = 42993b05
+
+
+Third Packet Calculation.
+-------------------------
+String ThirdPacket_GSM_Iridium_NoRules="a20309000000000000000001";
+        System.out.println("MainActivity Total String Length = "+ThirdPacket_GSM_Iridium_NoRules.length());
+        System.out.println("MainActivity Command = "+ThirdPacket_GSM_Iridium_NoRules.substring(0,2));
+        System.out.println("MainActivity Upcode = "+ThirdPacket_GSM_Iridium_NoRules.substring(2,4));
+        System.out.println("MainActivity length = "+ThirdPacket_GSM_Iridium_NoRules.substring(4,6));
+        System.out.println("MainActivity GSM Reporting Time =  Value= "+ThirdPacket_GSM_Iridium_NoRules.substring(6,14)+" Hex Value = "+convert4bytes(ThirdPacket_GSM_Iridium_NoRules.substring(6,14)));
+        System.out.println("MainActivity Iridium Reporting Time =  Value= "+ThirdPacket_GSM_Iridium_NoRules.substring(6,14)+" Hex Value = "+convert4bytes(ThirdPacket_GSM_Iridium_NoRules.substring(6,14)));
+        System.out.println("MainActivity Number of Rules "+ThirdPacket_GSM_Iridium_NoRules.substring(22,ThirdPacket_GSM_Iridium_NoRules.length()));
+
+ MainActivity Total String Length = 24
+ MainActivity Command = a2
+ MainActivity Upcode = 03
+ MainActivity length = 09
+ MainActivity GSM Reporting Time =  Value= 00000000 Hex Value = 0
+ MainActivity Iridium Reporting Time =  Value= 00000000 Hex Value = 0
+ MainActivity Number of Rules 01
+
+ Fourth Packet Manipulation
+--------------------------
+        String FourthPacket_RuleId_Value_ActionBitMask="a20409040000000500000018";
+        System.out.println("MainActivity Total String Length = "+FourthPacket_RuleId_Value_ActionBitMask.length());
+        System.out.println("MainActivity Command = "+FourthPacket_RuleId_Value_ActionBitMask.substring(0,2));
+        System.out.println("MainActivity Upcode = "+FourthPacket_RuleId_Value_ActionBitMask.substring(2,4));
+        System.out.println("MainActivity length = "+FourthPacket_RuleId_Value_ActionBitMask.substring(4,6));
+        System.out.println("MainActivity Rule Id = "+FourthPacket_RuleId_Value_ActionBitMask.substring(6,8));
+        System.out.println("MainActivity Rule Value = "+FourthPacket_RuleId_Value_ActionBitMask.substring(8,16)+" Rule Value(Hex) ="+convert4bytes(FourthPacket_RuleId_Value_ActionBitMask.substring(8,16)));
+        System.out.println("MainActivity Action Bit Mask = "+FourthPacket_RuleId_Value_ActionBitMask.substring(16,FourthPacket_RuleId_Value_ActionBitMask.length())+" Rule Value(Hex) ="+convert4bytes(FourthPacket_RuleId_Value_ActionBitMask.substring(16,FourthPacket_RuleId_Value_ActionBitMask.length())));
+
+
+ MainActivity Total String Length = 24
+ MainActivity Command = a2
+ MainActivity Upcode = 04
+ MainActivity length = 09
+ MainActivity Rule Id = 04
+ MainActivity Rule Value = 00000005 Rule Value(Hex) =5
+ MainActivity Action Bit Mask = 00000018 Rule Value(Hex) =24
+
+ 
+Fifith Packet Manipulation
+--------------------------
+        String FifthEndingPacket="a2050101";
+        System.out.println("MainActivity Total String Length = "+FifthEndingPacket.length());
+        System.out.println("MainActivity Command = "+FifthEndingPacket.substring(0,2));
+        System.out.println("MainActivity Upcode = "+FifthEndingPacket.substring(2,4));
+        System.out.println("MainActivity length = "+FifthEndingPacket.substring(4,6));
+        System.out.println("MainActivity Data = "+FifthEndingPacket.substring(6,8));
+
+ MainActivity Total String Length = 8
+ MainActivity Command = a2
+ MainActivity Upcode = 05
+ MainActivity length = 01
+ MainActivity Data = 01
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+ a5 Packet Manipulation
+ ---------------------
+Packet Example:-
+---------------
+
+a511000101414575e642993aef010000000101
+
+Updated New Packet Value:-
+--------------------------
+
+a51000c901414575ec42993aef0500000000
+
+
+
+
+Packet Format:-Example
+   a5      10          00 01              01           41 45 75 ec        42 99 3a ef            01            00 00 00 01                 01
+Command  Length     GeoFence ID       BreachType      CurrentLatitude   CurrentLongitude   Violated_RuleId   Violated_Value            New/OldFlag
+
+        String a5PacketAlert="a511000101414575e642993aef010000000101"; 
+        System.out.println("MainActivity Total String Length = "+a5PacketAlert.length());
+        System.out.println("MainActivity Command = "+a5PacketAlert.substring(0,2));
+        System.out.println("MainActivity Upcode = "+a5PacketAlert.substring(2,4));
+        System.out.println("MainActivity length = "+a5PacketAlert.substring(4,6));
+        System.out.println("MainActivity GeoId = "+a5PacketAlert.substring(4,8));
+        System.out.println("MainActivity BreachType = "+a5PacketAlert.substring(8,10));
+        System.out.println("MainActivity CurrentLatitude = "+a5PacketAlert.substring(10,18));
+        System.out.println("MainActivity CurrentLongitude = "+a5PacketAlert.substring(18,26));
+        System.out.println("MainActivity Violated Rule ID = "+a5PacketAlert.substring(26,28));
+        System.out.println("MainActivity Violated Rule value = "+a5PacketAlert.substring(28,36));
+        System.out.println("MainActivity Violated New_Old Flag = "+a5PacketAlert.substring(36,38));
+
+        
+ MainActivity Total String Length = 38
+ MainActivity Command = a5
+ MainActivity Upcode = 11
+ MainActivity length = 00
+ MainActivity GeoId = 0001
+ MainActivity BreachType = 01
+ MainActivity CurrentLatitude = 414575e6
+ MainActivity CurrentLongitude = 42993aef
+ MainActivity Violated Rule ID = 01
+ MainActivity Violated Rule value = 00000001
+ MainActivity Violated New_Old Flag = 01
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Common Utility Methods.
+----------------------
+ public static BigInteger convert4bytes(String value4bytes){
+        return new BigInteger(value4bytes, 16);
+    }
+
+
+
+
+
+
+
+

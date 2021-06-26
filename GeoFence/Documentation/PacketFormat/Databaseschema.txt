@@ -1,0 +1,89 @@
+DataBase insertion Table:-
+
+
+First Packet
+============
+
+   a2        01     09         0001     00 3e         00            0000000c
+Command    Opcode  Length     Geo-ID   Geo-Size      Type		   (Radius(Type=00)
+																 (No.of vertices Type=01)
+
+GeoFence Table:-
+Geo Id,
+Geo Size,
+Type,
+Number of Vertices,
+
+
+
+
+
+Second Packet
+=============
+  a2           02       08                  41 45 75 d5              42 99 3a e7
+Command		 Opcode   Length 			       Latitude			   Longitude
+
+
+Circular Means:- GeoFence Table. // yes
+PolyGon Meand :-PolyLatLong Table //yes
+
+
+
+Third Packet
+============
+
+   a2       03     09             00 00 00 78          00 00 00 00              04
+Command  Opcode	 Length		 GSM Reporting Time     Iridium Reporting Time    No.of Rules
+
+
+GeoFence Table
+
+GSM Reporting Time 
+Iridium Reporting Time   //same for Circular and polygon..
+
+
+
+Number of Rules...? // GeoFence Table..(Add one more column and save it...)
+Rules Table or which Table..?
+
+
+
+Fourth Packet
+=============
+
+    a2      04         09             01                5f 35 11 ff               00 00 00 01
+Command  Opcode		Length	 		Rule ID			 	    Value			      Action BitMask  
+
+Rules Table:-
+
+Rule ID,RuleValue,(Rules_number not required.....)
+
+
+
+
+Action Table Delete...? Yes/dont delete.
+
+
+(a5 packet)
+Geo-Alert Table:-
+Breach_Lat ---->a5 packet
+Breach_Long---->a5 packet
+BreachRule_ID----->
+BreachRuleValue----->
+date_Time----->
+timeStamp----->
+Rule_Name----->
+is_Read----->
+OriginalRuleValue----->
+bleAddress----->
+Message----->
+                                                                 
+last 1 byte is 01 then only request firmware.
+Zero means don t send request....
+
+
+breachRuleid:-
+
+breachRule Value:-
+
+                                                                 

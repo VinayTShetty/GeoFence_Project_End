@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginRight="@dimen/_15sdp"
+    android:background="@color/colorTransparent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/raw_installation_photo_item_cardview_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="false"
+                app:cardPreventCornerOverlap="false"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/header_rule_violation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:text="Breach Maximum Speed Limit"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/ble_device_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/header_rule_violation"
+                        android:gravity="left"
+                        android:padding="@dimen/_5sdp"
+                        android:text="SC2 Device : SA45SD57SD23"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_message_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title"
+                        android:gravity="left"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Minimum Speed Limit 15 km/hour"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_10sdp" />
+                    <TextView
+                        android:id="@+id/tv_message_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title"
+                        android:gravity="left"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Current Speed 10km/hour"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_10sdp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_message"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_ok"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@color/colorWhite"
+                            android:gravity="center"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/str_see_in_Map"
+                            android:textColor="@color/dialogErrorBackgroundColor"
+                            android:textSize="@dimen/_12sdp" />
+                        <TextView
+                            android:id="@+id/tv_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@color/dialogErrorBackgroundColor"
+                            android:gravity="center"
+                            android:padding="@dimen/_8sdp"
+                            android:text="@string/ignore_dialog"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/dialog_success_img_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/ic_success"
+            app:civ_border_color="@color/colorBlack"
+                app:civ_circle_background_color="@color/colorWhite"
+             />
+    </RelativeLayout>
+</RelativeLayout>

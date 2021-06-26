@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/vinay/geofence/master/GeoFence/Documentation/DataBase/DBfile_07_01_2021/geofence_succorfish.db" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><current_tab id="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="4450"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="tbl_Device"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Action_info_Table" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><sort/><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table><table schema="main" name="tbl_Device" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><sort/><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">
+
+CREATE TABLE `Action_info_Table` (
+	`id`	INTEGER NOT NULL,
+	`action`	VARCHAR,
+	`action_ID`	VARCHAR,
+	`description`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `Geofence` (
+	`id`	INTEGER NOT NULL,
+	`name`	VARCHAR,
+	`geofence_ID`	VARCHAR,
+	`type`	VARCHAR,
+	`lat`	VARCHAR,
+	`long`	VARCHAR,
+	`radiusOrvertices`	VARCHAR,
+	`number_of_rules`	VARCHAR,
+    `gsm_reporting`	VARCHAR,
+    `iridium_reporting`	VARCHAR,
+	`is_active`	VARCHAR,
+`firmware_timestamp`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `Geofence_alert_Table` (
+	`id`	INTEGER NOT NULL,
+	`geofence_ID`	VARCHAR,
+	`Geo_name`	VARCHAR,
+	`Geo_Type`	VARCHAR,
+	`Breach_Type`	VARCHAR,
+	`Breach_Lat`	VARCHAR,
+	`Breach_Long`	VARCHAR,
+	`BreachRule_ID`	VARCHAR,
+	`BreachRuleValue`	VARCHAR,
+	`date_Time`	VARCHAR,
+	`timeStamp`	VARCHAR,
+	`Rule_Name`	VARCHAR,
+	`is_Read`	VARCHAR,
+	`OriginalRuleValue`	VARCHAR,
+	`bleAddress`	VARCHAR,
+	`Message_one`	VARCHAR,
+	`Message_two`	VARCHAR,
+	`alias_name_alert`	VARCHAR,
+	`geoFence_timestamp`	VARCHAR,
+	`geoFence_lat`	VARCHAR,
+	`geoFence_long`	VARCHAR,
+	`geoFence_radius_vertices`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `Polygon_Lat_Long` (
+	`id`	INTEGER NOT NULL,
+	`geofence_ID`	VARCHAR,
+	`lat`	VARCHAR,
+	`long`	VARCHAR,
+	`geofence_timeStamp`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `Rule_info_Table` (
+	`id`	INTEGER NOT NULL,
+	`Rule`	VARCHAR,
+	`Rule_ID`	VARCHAR,
+	`description`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE `Rules_Table` (
+	`id`	INTEGER NOT NULL,
+	`name`	VARCHAR,
+	`geofence_ID`	VARCHAR,
+	`rule_ID`	VARCHAR,
+	`rule_value`	VARCHAR,
+	PRIMARY KEY(`id`)
+);
+
+
+CREATE TABLE 'tbl_Device' (
+	id integer primary key autoincrement not null, 
+	'BLE_Address' VARCHAR, 
+	'name' VARCHAR,
+	'imei' VARCHAR,
+	'device_token' VARCHAR,
+	 'is_active' VARCHAR );
+
+CREATE TABLE `NewChat` (
+	`id`	integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+	`from_name`	varchar ( 255 ),
+	`to_name`	varchar ( 255 ),
+	`msg_txt`	varchar ( 255 ),
+	`time`	varchar ( 255 ),
+	`status`	varchar ( 255 ),
+	`sequence`	varchar ( 255 ),
+	`identifier`	varchar ( 255 ),
+	`timeStamp`	real,
+	`isGSM`	VARCHAR
+);</sql><current_tab id="0"/></tab_sql></sqlb_project>
